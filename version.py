@@ -5,5 +5,5 @@ minor = 5
 patch = 1
 status = "dev"
 module_config = ""
-website = "https://github.com/geqo-godot/geqo"
+website = "https://geqo-docs.readthedocs.io"
 docs = "latest"

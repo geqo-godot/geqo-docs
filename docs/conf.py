@@ -12,7 +12,7 @@ import os
 needs_sphinx = "8.1"
 
 # Sphinx extension module names and templates location
-sys.path.append(os.path.abspath("_extensions"))
+sys.path.append(os.path.abspath("godot-docs/_extensions"))
 extensions = [
     "sphinx_tabs.tabs",
     "notfound.extension",
@@ -37,16 +37,14 @@ on_rtd = os.environ.get("READTHEDOCS", None) == "True"
 # This makes it easier to test the custom 404 page by loading `/404.html`
 # on a local web server.
 if not on_rtd:
-    notfound_urls_prefix = ''
+    notfound_urls_prefix = ""
 
 if on_rtd:
     extensions.append("override_jobs")
 
 # Specify the site name for the Open Graph extension.
-ogp_site_name = "Godot Engine documentation"
-ogp_social_cards = {
-    "enable": False
-}
+ogp_site_name = "GEQO documentation"
+ogp_social_cards = {"enable": False}
 
 if not os.getenv("SPHINX_NO_DESCRIPTIONS"):
     extensions.append("godot_descriptions")
@@ -61,11 +59,9 @@ source_encoding = "utf-8-sig"
 master_doc = "index"
 
 # General information about the project
-project = "Godot Engine"
-copyright = (
-    "2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)"
-)
-author = "Juan Linietsky, Ariel Manzur and the Godot community"
+project = "Godot Environment Query Orchestrator"
+copyright = "2026 Francisco Marrero"
+author = "Francisco Marrero"
 
 # Version info for the project, acts as replacement for |version| and |release|
 # The short X.Y version
@@ -83,23 +79,23 @@ if env_tags is not None:
 # Language / i18n
 
 supported_languages = {
-    "en": "Godot Engine %s documentation in English",
-    "de": "Godot Engine %s Dokumentation auf Deutsch",
-    "es": "Documentación de Godot Engine %s en español",
-    "fr": "Documentation de Godot Engine %s en français",
-    "fi": "Godot Engine %s dokumentaatio suomeksi",
-    "it": "Godot Engine %s documentazione in italiano",
-    "ja": "Godot Engine %sの日本語のドキュメント",
-    "ko": "Godot Engine %s 문서 (한국어)",
-    "pl": "Dokumentacja Godot Engine %s w języku polskim",
-    "pt_BR": "Documentação da Godot Engine %s em Português Brasileiro",
-    "ru": "Документация Godot Engine %s на русском языке",
-    "uk": "Документація до Godot Engine %s українською мовою",
-    "zh_Hans": "Godot Engine %s 简体中文文档",
-    "zh_Hant": "Godot Engine %s 正體中文 (台灣) 文件",
-    # Keeping those as RTD doesn't support Hans/Hant names yet.
-    "zh_CN": "Godot Engine %s 简体中文文档",
-    "zh_TW": "Godot Engine %s 正體中文 (台灣) 文件",
+    "en": "GEQO %s documentation in English",
+    # "de": "Godot Engine %s Dokumentation auf Deutsch",
+    # "es": "Documentación de Godot Engine %s en español",
+    # "fr": "Documentation de Godot Engine %s en français",
+    # "fi": "Godot Engine %s dokumentaatio suomeksi",
+    # "it": "Godot Engine %s documentazione in italiano",
+    # "ja": "Godot Engine %sの日本語のドキュメント",
+    # "ko": "Godot Engine %s 문서 (한국어)",
+    # "pl": "Dokumentacja Godot Engine %s w języku polskim",
+    # "pt_BR": "Documentação da Godot Engine %s em Português Brasileiro",
+    # "ru": "Документация Godot Engine %s на русском языке",
+    # "uk": "Документація до Godot Engine %s українською мовою",
+    # "zh_Hans": "Godot Engine %s 简体中文文档",
+    # "zh_Hant": "Godot Engine %s 正體中文 (台灣) 文件",
+    ## Keeping those as RTD doesn't support Hans/Hant names yet.
+    # "zh_CN": "Godot Engine %s 简体中文文档",
+    # "zh_TW": "Godot Engine %s 正體中文 (台灣) 文件",
 }
 
 # RTD normalized their language codes to ll-cc (e.g. pt-br),
@@ -107,7 +103,7 @@ supported_languages = {
 # `language` is the Sphinx configuration so it needs to be converted back.
 language = os.getenv("READTHEDOCS_LANGUAGE", "en")
 if "-" in language:
-    (lang_name, lang_country) = language.split("-")
+    lang_name, lang_country = language.split("-")
     language = lang_name + "_" + lang_country.upper()
 
 if not language in supported_languages.keys():
@@ -148,17 +144,17 @@ html_theme_options = {
     "flyout_display": "attached",
 }
 
-html_title = supported_languages[language] % ( "(" + version + ")" )
+html_title = supported_languages[language] % ("(" + version + ")")
 
 # Edit on GitHub options: https://docs.readthedocs.io/en/latest/guides/edit-source-links-sphinx.html
 html_context = {
     "display_github": not is_i18n,  # Integrate GitHub
-    "github_user": "godotengine",  # Username
-    "github_repo": "godot-docs",  # Repo name
-    "github_version": "master",  # Version
+    "github_user": "geqo-godot",  # Username
+    "github_repo": "geqo-docs",  # Repo name
+    "github_version": "main",  # Version
     "conf_py_path": "/",  # Path in the checkout to the docs root
     "godot_docs_title": supported_languages[language],
-    "godot_docs_basepath": "https://docs.godotengine.org/",
+    "godot_docs_basepath": "https://geqo-docs.readthedocs.io/",
     "godot_docs_suffix": ".html",
     # Distinguish local development website from production website.
     # This prevents people from looking for changes on the production website after making local changes :)
@@ -166,37 +162,39 @@ html_context = {
     # Set this to `True` when in the `latest` branch to clearly indicate to the reader
     # that they are not reading the `stable` documentation.
     "godot_is_latest": True,
-    "godot_version": "4.7",
+    "godot_version": "0.5.1",
     # Enables a banner that displays the up-to-date status of each article.
     "godot_show_article_status": True,
     # Display user-contributed notes at the bottom of pages that don't have `:allow_comments: False` at the top.
     "godot_show_article_comments": on_rtd and not is_i18n,
 }
 
-html_logo = "img/docs_logo.svg"
+html_logo = "godot-docs/img/docs_logo.svg"
 
 # These folders are copied to the documentation's HTML output
-html_static_path = ["_static"]
+html_static_path = ["godot-docs/_static"]
 
-html_extra_path = ["robots.txt"]
+html_extra_path = ["godot-docs/robots.txt"]
 
 # These paths are either relative to html_static_path
 # or fully qualified paths (e.g. https://...)
 html_css_files = [
-    "css/custom.css",
+    "godot-docs/css/custom.css",
 ]
 
 if not on_rtd:
-    html_css_files.append("css/dev.css")
+    html_css_files.append("godot-docs/css/dev.css")
 
 html_js_files = [
     "js/custom.js",
-    ('https://plausible.godot.foundation/js/script.file-downloads.outbound-links.js',
-     {'defer': 'defer', 'data-domain': 'godotengine.org'}),
+    (
+        "https://plausible.godot.foundation/js/script.file-downloads.outbound-links.js",
+        {"defer": "defer", "data-domain": "godotengine.org"},
+    ),
 ]
 
 # Output file base name for HTML help builder
-htmlhelp_basename = "GodotEnginedoc"
+htmlhelp_basename = "GEQOdoc"
 
 # -- Options for reStructuredText parser ----------------------------------
 
@@ -211,9 +209,9 @@ file_insertion_enabled = False
 latex_documents = [
     (
         master_doc,
-        "GodotEngine.tex",
-        "Godot Engine Documentation",
-        "Juan Linietsky, Ariel Manzur and the Godot community",
+        "GEQO.tex",
+        "GEQO Documentation",
+        "Francisco Marrero",
         "manual",
     ),
 ]
@@ -263,7 +261,9 @@ figure_language_filename = "{root}.{language}{ext}"
 
 cwd = os.getcwd()
 
-sphinx_original_get_image_filename_for_language = sphinx.util.i18n.get_image_filename_for_language
+sphinx_original_get_image_filename_for_language = (
+    sphinx.util.i18n.get_image_filename_for_language
+)
 
 
 def godot_get_image_filename_for_language(filename, env):
@@ -277,6 +277,7 @@ def godot_get_image_filename_for_language(filename, env):
     path = sphinx_original_get_image_filename_for_language(filename, env)
     path = os.path.abspath(os.path.join("../images/", os.path.relpath(path, cwd)))
     return path
+
 
 sphinx.util.i18n.get_image_filename_for_language = godot_get_image_filename_for_language
 
@@ -309,4 +310,4 @@ rst_epilog = """
 )
 
 # Needed so the table of contents is created for EPUB
-epub_tocscope = 'includehidden'
+epub_tocscope = "includehidden"
