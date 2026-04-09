@@ -153,7 +153,7 @@ html_context = {
     "godot_show_article_comments": on_rtd and not is_i18n,
 }
 
-html_logo = "godot-docs/img/docs_logo.svg"
+html_logo = "geqo-logo.svg"
 
 # These folders are copied to the documentation's HTML output
 html_static_path = ["godot-docs/_static"]
