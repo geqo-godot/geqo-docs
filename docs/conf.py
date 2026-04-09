@@ -80,22 +80,6 @@ if env_tags is not None:
 
 supported_languages = {
     "en": "GEQO %s documentation in English",
-    # "de": "Godot Engine %s Dokumentation auf Deutsch",
-    # "es": "Documentación de Godot Engine %s en español",
-    # "fr": "Documentation de Godot Engine %s en français",
-    # "fi": "Godot Engine %s dokumentaatio suomeksi",
-    # "it": "Godot Engine %s documentazione in italiano",
-    # "ja": "Godot Engine %sの日本語のドキュメント",
-    # "ko": "Godot Engine %s 문서 (한국어)",
-    # "pl": "Dokumentacja Godot Engine %s w języku polskim",
-    # "pt_BR": "Documentação da Godot Engine %s em Português Brasileiro",
-    # "ru": "Документация Godot Engine %s на русском языке",
-    # "uk": "Документація до Godot Engine %s українською мовою",
-    # "zh_Hans": "Godot Engine %s 简体中文文档",
-    # "zh_Hant": "Godot Engine %s 正體中文 (台灣) 文件",
-    ## Keeping those as RTD doesn't support Hans/Hant names yet.
-    # "zh_CN": "Godot Engine %s 简体中文文档",
-    # "zh_TW": "Godot Engine %s 正體中文 (台灣) 文件",
 }
 
 # RTD normalized their language codes to ll-cc (e.g. pt-br),
