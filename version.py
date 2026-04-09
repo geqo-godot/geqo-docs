@@ -1,0 +1,9 @@
+short_name = "geqo"
+name = "Godot Environment Query Orchestrator"
+major = 0
+minor = 5
+patch = 1
+status = "dev"
+module_config = ""
+website = "https://github.com/geqo-godot/geqo"
+docs = "latest"
