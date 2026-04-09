@@ -35,6 +35,7 @@ Variant types
     class_generatorinarray3d
     class_generatoringroup2d
     class_generatoringroup3d
+    class_geqodebug
     class_geqodebugdraw2d
     class_geqodebugspheres2d
     class_geqodebugspheres3d
