@@ -14,6 +14,13 @@ TestRaycastTo2D
 
 A query test that casts a ray or shape from the :ref:`QueryItem2D<class_QueryItem2D>` to a :ref:`QueryContext2D<class_QueryContext2D>`, to check if it hits.
 
+.. rst-class:: classref-introduction-group
+
+Description
+-----------
+
+A query test that casts a ray or shape from the :ref:`QueryItem2D<class_QueryItem2D>` to a :ref:`QueryContext2D<class_QueryContext2D>`, to check if it hits.
+
 .. rst-class:: classref-reftable-group
 
 Properties

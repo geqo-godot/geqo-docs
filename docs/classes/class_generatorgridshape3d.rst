@@ -156,9 +156,7 @@ Height where the raycast search will start.
 - |void| **set_projection_collision_mask**\ (\ value\: ``int``\ )
 - ``int`` **get_projection_collision_mask**\ (\ )
 
-.. container:: contribute
-
-	There is currently no description for this property. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
+The physics layers this projection **scans**.
 
 .. rst-class:: classref-item-separator
 
@@ -175,9 +173,7 @@ Height where the raycast search will start.
 - |void| **set_shape**\ (\ value\: ``Shape3D``\ )
 - ``Shape3D`` **get_shape**\ (\ )
 
-.. container:: contribute
-
-	There is currently no description for this property. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
+Shape of the projection.
 
 .. rst-class:: classref-item-separator
 
@@ -194,9 +190,7 @@ Height where the raycast search will start.
 - |void| **set_space_between**\ (\ value\: ``float``\ )
 - ``float`` **get_space_between**\ (\ )
 
-.. container:: contribute
-
-	There is currently no description for this property. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
+The space between each point in the grid.
 
 .. rst-class:: classref-item-separator
 
@@ -213,9 +207,7 @@ Height where the raycast search will start.
 - |void| **set_use_shape_cast**\ (\ value\: ``bool``\ )
 - ``bool`` **get_use_shape_cast**\ (\ )
 
-.. container:: contribute
-
-	There is currently no description for this property. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
+Use a ``Shape3D`` instead of a raycast.
 
 .. rst-class:: classref-item-separator
 

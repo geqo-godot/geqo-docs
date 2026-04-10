@@ -14,6 +14,13 @@ TestDistanceTo3D
 
 A query test that checks the distance from :ref:`QueryItem3D<class_QueryItem3D>` to a :ref:`QueryContext3D<class_QueryContext3D>`.
 
+.. rst-class:: classref-introduction-group
+
+Description
+-----------
+
+A query test that checks the distance from :ref:`QueryItem3D<class_QueryItem3D>` to a :ref:`QueryContext3D<class_QueryContext3D>`.
+
 .. rst-class:: classref-reftable-group
 
 Properties
@@ -71,9 +78,7 @@ What context the test will use for the checking the distance. If it's more than 
 - |void| **set_max_distance**\ (\ value\: ``float``\ )
 - ``float`` **get_max_distance**\ (\ )
 
-.. container:: contribute
-
-	There is currently no description for this property. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
+Maximum distance. If filtering is enabled, this filters it out.
 
 .. rst-class:: classref-item-separator
 
@@ -90,9 +95,7 @@ What context the test will use for the checking the distance. If it's more than 
 - |void| **set_min_distance**\ (\ value\: ``float``\ )
 - ``float`` **get_min_distance**\ (\ )
 
-.. container:: contribute
-
-	There is currently no description for this property. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
+Minimum distance. If filtering is enabled, this filters it out.
 
 .. rst-class:: classref-item-separator
 
@@ -109,9 +112,7 @@ What context the test will use for the checking the distance. If it's more than 
 - |void| **set_scoring_curve**\ (\ value\: ``Curve``\ )
 - ``Curve`` **get_scoring_curve**\ (\ )
 
-.. container:: contribute
-
-	There is currently no description for this property. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
+Scoring curve from :ref:`min_distance<class_TestDistanceTo3D_property_min_distance>` to :ref:`max_distance<class_TestDistanceTo3D_property_max_distance>`. Decides how much score each context member applies to the :ref:`QueryItem3D<class_QueryItem3D>`
 
 .. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

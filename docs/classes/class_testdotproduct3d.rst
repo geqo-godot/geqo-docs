@@ -14,6 +14,13 @@ TestDotProduct3D
 
 A query test that tests the dot product between two :ref:`QueryContext3D<class_QueryContext3D>`\ s.
 
+.. rst-class:: classref-introduction-group
+
+Description
+-----------
+
+A query test that tests the dot product between two :ref:`QueryContext3D<class_QueryContext3D>`\ s.
+
 .. rst-class:: classref-reftable-group
 
 Properties

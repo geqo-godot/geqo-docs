@@ -16,6 +16,13 @@ QueryContext3D
 
 Acts as a reference for :ref:`QueryGenerator3D<class_QueryGenerator3D>`\ s and :ref:`QueryTest3D<class_QueryTest3D>`\ s, providing ``Node3D``\ s and/or ``Vector3``\ s in an ``Array``.
 
+.. rst-class:: classref-introduction-group
+
+Description
+-----------
+
+Acts as a reference for :ref:`QueryGenerator3D<class_QueryGenerator3D>`\ s and :ref:`QueryTest3D<class_QueryTest3D>`\ s, providing ``Node3D``\ s and/or ``Vector3``\ s in an ``Array``.
+
 .. rst-class:: classref-reftable-group
 
 Methods
@@ -30,6 +37,8 @@ Methods
    | ``Array``              | :ref:`get_context<class_QueryContext3D_method_get_context>`\ (\ )                                        |
    +------------------------+----------------------------------------------------------------------------------------------------------+
    | ``PackedVector3Array`` | :ref:`get_context_positions<class_QueryContext3D_method_get_context_positions>`\ (\ )                    |
+   +------------------------+----------------------------------------------------------------------------------------------------------+
+   | ``Array``              | :ref:`get_query_items<class_QueryContext3D_method_get_query_items>`\ (\ )                                |
    +------------------------+----------------------------------------------------------------------------------------------------------+
 
 .. rst-class:: classref-section-separator
@@ -74,6 +83,18 @@ Called on :ref:`QueryGenerator3D<class_QueryGenerator3D>`\ s and ``QueryTest3Ds`
 ``PackedVector3Array`` **get_context_positions**\ (\ ) :ref:`🔗<class_QueryContext3D_method_get_context_positions>`
 
 Returns only the positions of each context. Used in some :ref:`QueryTest3D<class_QueryTest3D>`\ s where collisions aren't needed.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_QueryContext3D_method_get_query_items:
+
+.. rst-class:: classref-method
+
+``Array`` **get_query_items**\ (\ ) :ref:`🔗<class_QueryContext3D_method_get_query_items>`
+
+Returns the list of current :ref:`QueryItem3D<class_QueryItem3D>`\ s.
 
 .. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

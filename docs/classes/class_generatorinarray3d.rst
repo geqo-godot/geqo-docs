@@ -46,9 +46,7 @@ Property Descriptions
 - |void| **set_context_array**\ (\ value\: :ref:`QueryContext3D<class_QueryContext3D>`\ )
 - :ref:`QueryContext3D<class_QueryContext3D>` **get_context_array**\ (\ )
 
-.. container:: contribute
-
-	There is currently no description for this property. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
+Array that will be returned. Can be ``Node3D``\ s or ``Vector3``\ s.
 
 .. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

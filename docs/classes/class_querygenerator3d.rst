@@ -16,6 +16,13 @@ QueryGenerator3D
 
 Generates potential positions or nodes which are then stored as :ref:`QueryItem3D<class_QueryItem3D>`\ s for testing.
 
+.. rst-class:: classref-introduction-group
+
+Description
+-----------
+
+Generates potential positions or nodes which are then stored as :ref:`QueryItem3D<class_QueryItem3D>`\ s for testing.
+
 .. rst-class:: classref-reftable-group
 
 Properties

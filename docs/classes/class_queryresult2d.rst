@@ -14,6 +14,13 @@ QueryResult2D
 
 Provides the query results with helper functions to get the best positions.
 
+.. rst-class:: classref-introduction-group
+
+Description
+-----------
+
+Provides the query results with helper functions to get the best positions.
+
 .. rst-class:: classref-reftable-group
 
 Methods

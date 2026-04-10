@@ -16,6 +16,13 @@ QueryTest3D
 
 Tests each :ref:`QueryItem3D<class_QueryItem3D>` from a :ref:`QueryGenerator3D<class_QueryGenerator3D>` to determine which is the best option.
 
+.. rst-class:: classref-introduction-group
+
+Description
+-----------
+
+Tests each :ref:`QueryItem3D<class_QueryItem3D>` from a :ref:`QueryGenerator3D<class_QueryGenerator3D>` to determine which is the best option.
+
 .. rst-class:: classref-reftable-group
 
 Properties
@@ -67,11 +74,7 @@ enum **TestPurpose**: :ref:`🔗<enum_QueryTest3D_TestPurpose>`
 
 :ref:`TestPurpose<enum_QueryTest3D_TestPurpose>` **FILTER_SCORE** = ``0``
 
-.. container:: contribute
-
-	There is currently no description for this enum. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
-
-
+Applies both scoring and filtering.
 
 .. _class_QueryTest3D_constant_FILTER_ONLY:
 
@@ -79,11 +82,7 @@ enum **TestPurpose**: :ref:`🔗<enum_QueryTest3D_TestPurpose>`
 
 :ref:`TestPurpose<enum_QueryTest3D_TestPurpose>` **FILTER_ONLY** = ``1``
 
-.. container:: contribute
-
-	There is currently no description for this enum. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
-
-
+Applies only filtering.
 
 .. _class_QueryTest3D_constant_SCORE_ONLY:
 
@@ -91,11 +90,7 @@ enum **TestPurpose**: :ref:`🔗<enum_QueryTest3D_TestPurpose>`
 
 :ref:`TestPurpose<enum_QueryTest3D_TestPurpose>` **SCORE_ONLY** = ``2``
 
-.. container:: contribute
-
-	There is currently no description for this enum. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
-
-
+Applies only scoring.
 
 .. rst-class:: classref-item-separator
 
@@ -113,11 +108,7 @@ enum **ScoreOperator**: :ref:`🔗<enum_QueryTest3D_ScoreOperator>`
 
 :ref:`ScoreOperator<enum_QueryTest3D_ScoreOperator>` **AVERAGE_SCORE** = ``0``
 
-.. container:: contribute
-
-	There is currently no description for this enum. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
-
-
+Takes the average score of each context member.
 
 .. _class_QueryTest3D_constant_MAX_SCORE:
 
@@ -125,11 +116,7 @@ enum **ScoreOperator**: :ref:`🔗<enum_QueryTest3D_ScoreOperator>`
 
 :ref:`ScoreOperator<enum_QueryTest3D_ScoreOperator>` **MAX_SCORE** = ``1``
 
-.. container:: contribute
-
-	There is currently no description for this enum. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
-
-
+Takes the max score of each context member.
 
 .. _class_QueryTest3D_constant_MIN_SCORE:
 
@@ -137,11 +124,7 @@ enum **ScoreOperator**: :ref:`🔗<enum_QueryTest3D_ScoreOperator>`
 
 :ref:`ScoreOperator<enum_QueryTest3D_ScoreOperator>` **MIN_SCORE** = ``2``
 
-.. container:: contribute
-
-	There is currently no description for this enum. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
-
-
+Takes the min score of each context member.
 
 .. rst-class:: classref-item-separator
 
@@ -159,11 +142,7 @@ enum **FilterOperator**: :ref:`🔗<enum_QueryTest3D_FilterOperator>`
 
 :ref:`FilterOperator<enum_QueryTest3D_FilterOperator>` **ANY_PASS** = ``0``
 
-.. container:: contribute
-
-	There is currently no description for this enum. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
-
-
+Any context member must pass the test.
 
 .. _class_QueryTest3D_constant_ALL_PASS:
 
@@ -171,11 +150,7 @@ enum **FilterOperator**: :ref:`🔗<enum_QueryTest3D_FilterOperator>`
 
 :ref:`FilterOperator<enum_QueryTest3D_FilterOperator>` **ALL_PASS** = ``1``
 
-.. container:: contribute
-
-	There is currently no description for this enum. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
-
-
+All context members must pass the test.
 
 .. rst-class:: classref-section-separator
 
@@ -214,9 +189,7 @@ How expensive this test will be to execute.
 - |void| **set_context_filter_operator**\ (\ value\: :ref:`FilterOperator<enum_QueryTest3D_FilterOperator>`\ )
 - :ref:`FilterOperator<enum_QueryTest3D_FilterOperator>` **get_context_filter_operator**\ (\ )
 
-.. container:: contribute
-
-	There is currently no description for this property. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
+What conditions must be met for each context member while filtering.
 
 .. rst-class:: classref-item-separator
 
@@ -233,9 +206,7 @@ How expensive this test will be to execute.
 - |void| **set_context_score_operator**\ (\ value\: :ref:`ScoreOperator<enum_QueryTest3D_ScoreOperator>`\ )
 - :ref:`ScoreOperator<enum_QueryTest3D_ScoreOperator>` **get_context_score_operator**\ (\ )
 
-.. container:: contribute
-
-	There is currently no description for this property. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
+What operation will happen for each context member while scoring.
 
 .. rst-class:: classref-item-separator
 
@@ -252,9 +223,7 @@ How expensive this test will be to execute.
 - |void| **set_test_purpose**\ (\ value\: :ref:`TestPurpose<enum_QueryTest3D_TestPurpose>`\ )
 - :ref:`TestPurpose<enum_QueryTest3D_TestPurpose>` **get_test_purpose**\ (\ )
 
-.. container:: contribute
-
-	There is currently no description for this property. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
+What this test is for.
 
 .. rst-class:: classref-section-separator
 
@@ -271,9 +240,7 @@ Method Descriptions
 
 |void| **_perform_test**\ (\ projection\: :ref:`QueryItem3D<class_QueryItem3D>`\ ) |virtual| |required| :ref:`🔗<class_QueryTest3D_private_method__perform_test>`
 
-.. container:: contribute
-
-	There is currently no description for this method. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
+Performs the test on this ``projection``. It adds score or filters it out.
 
 .. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

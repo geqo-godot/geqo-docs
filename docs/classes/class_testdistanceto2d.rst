@@ -14,6 +14,13 @@ TestDistanceTo2D
 
 A query test that checks the distance from :ref:`QueryItem2D<class_QueryItem2D>` to a :ref:`QueryContext2D<class_QueryContext2D>`.
 
+.. rst-class:: classref-introduction-group
+
+Description
+-----------
+
+A query test that checks the distance from :ref:`QueryItem2D<class_QueryItem2D>` to a :ref:`QueryContext2D<class_QueryContext2D>`.
+
 .. rst-class:: classref-reftable-group
 
 Properties
@@ -54,9 +61,7 @@ Property Descriptions
 - |void| **set_distance_to**\ (\ value\: :ref:`QueryContext2D<class_QueryContext2D>`\ )
 - :ref:`QueryContext2D<class_QueryContext2D>` **get_distance_to**\ (\ )
 
-.. container:: contribute
-
-	There is currently no description for this property. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
+What context the test will use for the checking the distance. If it's more than one location, then the results are averaged.
 
 .. rst-class:: classref-item-separator
 
@@ -73,9 +78,7 @@ Property Descriptions
 - |void| **set_max_distance**\ (\ value\: ``float``\ )
 - ``float`` **get_max_distance**\ (\ )
 
-.. container:: contribute
-
-	There is currently no description for this property. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
+Maximum distance. If filtering is enabled, this filters it out.
 
 .. rst-class:: classref-item-separator
 
@@ -92,9 +95,7 @@ Property Descriptions
 - |void| **set_min_distance**\ (\ value\: ``float``\ )
 - ``float`` **get_min_distance**\ (\ )
 
-.. container:: contribute
-
-	There is currently no description for this property. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
+Minimum distance. If filtering is enabled, this filters it out.
 
 .. rst-class:: classref-item-separator
 
@@ -111,9 +112,7 @@ Property Descriptions
 - |void| **set_scoring_curve**\ (\ value\: ``Curve``\ )
 - ``Curve`` **get_scoring_curve**\ (\ )
 
-.. container:: contribute
-
-	There is currently no description for this property. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
+Scoring curve from :ref:`min_distance<class_TestDistanceTo2D_property_min_distance>` to :ref:`max_distance<class_TestDistanceTo2D_property_max_distance>`. Decides how much score each context member applies to the :ref:`QueryItem3D<class_QueryItem3D>`
 
 .. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

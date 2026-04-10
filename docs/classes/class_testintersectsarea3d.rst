@@ -14,6 +14,13 @@ TestIntersectsArea3D
 
 A query test that checks if :ref:`QueryContext3D<class_QueryContext3D>` is intersecting an area using ``Shape3D``.
 
+.. rst-class:: classref-introduction-group
+
+Description
+-----------
+
+A query test that checks if :ref:`QueryContext3D<class_QueryContext3D>` is intersecting an area using ``Shape3D``.
+
 .. rst-class:: classref-reftable-group
 
 Properties

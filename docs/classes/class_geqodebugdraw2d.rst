@@ -12,9 +12,14 @@ GEQODebugDraw2D
 
 **Inherits:** ``Node2D``
 
-.. container:: contribute
+Provides utilities for debug visuals in 2D.
 
-	There is currently no description for this class. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
+.. rst-class:: classref-introduction-group
+
+Description
+-----------
+
+Provides utilities for debug visuals in 2D.
 
 .. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -57,9 +57,7 @@ Property Descriptions
 - |void| **set_generate_around**\ (\ value\: :ref:`QueryContext2D<class_QueryContext2D>`\ )
 - :ref:`QueryContext2D<class_QueryContext2D>` **get_generate_around**\ (\ )
 
-.. container:: contribute
-
-	There is currently no description for this property. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
+Reference :ref:`QueryContext2D<class_QueryContext2D>`, where a grid will generate on each of these positions.
 
 .. rst-class:: classref-item-separator
 
@@ -76,9 +74,7 @@ Property Descriptions
 - |void| **set_grid_half_size**\ (\ value\: ``float``\ )
 - ``float`` **get_grid_half_size**\ (\ )
 
-.. container:: contribute
-
-	There is currently no description for this property. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
+The half the size of the grid, similar to radius.
 
 .. rst-class:: classref-item-separator
 
@@ -95,9 +91,7 @@ Property Descriptions
 - |void| **set_space_between**\ (\ value\: ``float``\ )
 - ``float`` **get_space_between**\ (\ )
 
-.. container:: contribute
-
-	There is currently no description for this property. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
+The space between each point in the grid.
 
 .. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

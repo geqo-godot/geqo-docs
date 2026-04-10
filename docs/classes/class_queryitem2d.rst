@@ -14,6 +14,13 @@ QueryItem2D
 
 Holds item information, such as :ref:`score<class_QueryItem2D_property_score>`, :ref:`projection_position<class_QueryItem2D_property_projection_position>` and :ref:`collided_with<class_QueryItem2D_property_collided_with>`.
 
+.. rst-class:: classref-introduction-group
+
+Description
+-----------
+
+Holds item information, such as :ref:`score<class_QueryItem2D_property_score>`, :ref:`projection_position<class_QueryItem2D_property_projection_position>` and :ref:`collided_with<class_QueryItem2D_property_collided_with>`.
+
 .. rst-class:: classref-reftable-group
 
 Properties
@@ -41,7 +48,7 @@ Methods
    :widths: auto
 
    +---------------------------------------+--------------------------------------------------------------------------------------------------------------+
-   | |void|                                | :ref:`add_score<class_QueryItem2D_method_add_score>`\ (\ _unnamed_arg0\: ``float``\ )                        |
+   | |void|                                | :ref:`add_score<class_QueryItem2D_method_add_score>`\ (\ amount\: ``float``\ )                               |
    +---------------------------------------+--------------------------------------------------------------------------------------------------------------+
    | :ref:`QueryItem2D<class_QueryItem2D>` | :ref:`create<class_QueryItem2D_method_create>`\ (\ position\: ``Vector2``, collider\: ``Node2D``\ ) |static| |
    +---------------------------------------+--------------------------------------------------------------------------------------------------------------+
@@ -66,9 +73,9 @@ Property Descriptions
 - |void| **set_collided_with**\ (\ value\: ``Node2D``\ )
 - ``Node2D`` **get_collided_with**\ (\ )
 
-.. container:: contribute
+The node this query item is attached to. It could be the ground, an enemy, or any node that could be of interest for the testing phase.
 
-	There is currently no description for this property. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
+This is provided by :ref:`QueryGenerator3D<class_QueryGenerator3D>`\ s.
 
 .. rst-class:: classref-item-separator
 
@@ -85,9 +92,7 @@ Property Descriptions
 - |void| **set_is_filtered**\ (\ value\: ``bool``\ )
 - ``bool`` **get_is_filtered**\ (\ )
 
-.. container:: contribute
-
-	There is currently no description for this property. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
+If ``true``, exclude this item from the tests and results.
 
 .. rst-class:: classref-item-separator
 
@@ -104,9 +109,7 @@ Property Descriptions
 - |void| **set_projection_position**\ (\ value\: ``Vector2``\ )
 - ``Vector2`` **get_projection_position**\ (\ )
 
-.. container:: contribute
-
-	There is currently no description for this property. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
+The point of contact of this item. This is provided by :ref:`QueryGenerator3D<class_QueryGenerator3D>`\ s.
 
 .. rst-class:: classref-item-separator
 
@@ -123,9 +126,7 @@ Property Descriptions
 - |void| **set_score**\ (\ value\: ``float``\ )
 - ``float`` **get_score**\ (\ )
 
-.. container:: contribute
-
-	There is currently no description for this property. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
+Current score of this item. These are normalized at the testing phase.
 
 .. rst-class:: classref-section-separator
 
@@ -140,11 +141,9 @@ Method Descriptions
 
 .. rst-class:: classref-method
 
-|void| **add_score**\ (\ _unnamed_arg0\: ``float``\ ) :ref:`🔗<class_QueryItem2D_method_add_score>`
+|void| **add_score**\ (\ amount\: ``float``\ ) :ref:`🔗<class_QueryItem2D_method_add_score>`
 
-.. container:: contribute
-
-	There is currently no description for this method. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
+Adds to the current score of this item.
 
 .. rst-class:: classref-item-separator
 
@@ -156,9 +155,7 @@ Method Descriptions
 
 :ref:`QueryItem2D<class_QueryItem2D>` **create**\ (\ position\: ``Vector2``, collider\: ``Node2D``\ ) |static| :ref:`🔗<class_QueryItem2D_method_create>`
 
-.. container:: contribute
-
-	There is currently no description for this method. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
+Make a :ref:`QueryItem3D<class_QueryItem3D>` with a ``position`` and a ``collider``
 
 .. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

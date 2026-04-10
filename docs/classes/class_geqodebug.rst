@@ -12,9 +12,14 @@ GEQODebug
 
 **Inherits:** ``Object``
 
-.. container:: contribute
+Provides performance monitoring for GEQO.
 
-	There is currently no description for this class. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
+.. rst-class:: classref-introduction-group
+
+Description
+-----------
+
+Provides performance monitoring for GEQO.
 
 .. rst-class:: classref-reftable-group
 
@@ -45,9 +50,7 @@ Method Descriptions
 
 ``float`` **get_average_query_time_usec**\ (\ ) :ref:`🔗<class_GEQODebug_method_get_average_query_time_usec>`
 
-.. container:: contribute
-
-	There is currently no description for this method. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
+Returns the average query time of the last 1000 queries.
 
 .. rst-class:: classref-item-separator
 
@@ -59,9 +62,7 @@ Method Descriptions
 
 ``float`` **get_latest_query_time_usec**\ (\ ) :ref:`🔗<class_GEQODebug_method_get_latest_query_time_usec>`
 
-.. container:: contribute
-
-	There is currently no description for this method. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
+Returns the time of the most recent query.
 
 .. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

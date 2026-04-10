@@ -29,8 +29,6 @@ Properties
    +---------------------------------------------+-----------------------------------------------------------------------------------+--------------------------------------------------------------------------+
    | :ref:`QueryContext3D<class_QueryContext3D>` | :ref:`path_to<class_TestPathFindTo3D_property_path_to>`                           |                                                                          |
    +---------------------------------------------+-----------------------------------------------------------------------------------+--------------------------------------------------------------------------+
-   | ``Curve``                                   | :ref:`scoring_curve<class_TestPathFindTo3D_property_scoring_curve>`               |                                                                          |
-   +---------------------------------------------+-----------------------------------------------------------------------------------+--------------------------------------------------------------------------+
    | ``bool``                                    | :ref:`use_debug<class_TestPathFindTo3D_property_use_debug>`                       | ``false``                                                                |
    +---------------------------------------------+-----------------------------------------------------------------------------------+--------------------------------------------------------------------------+
 
@@ -72,25 +70,6 @@ How far from the destination the :ref:`QueryContext3D<class_QueryContext3D>` or 
 - :ref:`QueryContext3D<class_QueryContext3D>` **get_path_to**\ (\ )
 
 The context that will be used to find the path.
-
-.. rst-class:: classref-item-separator
-
-----
-
-.. _class_TestPathFindTo3D_property_scoring_curve:
-
-.. rst-class:: classref-property
-
-``Curve`` **scoring_curve** :ref:`🔗<class_TestPathFindTo3D_property_scoring_curve>`
-
-.. rst-class:: classref-property-setget
-
-- |void| **set_scoring_curve**\ (\ value\: ``Curve``\ )
-- ``Curve`` **get_scoring_curve**\ (\ )
-
-.. container:: contribute
-
-	There is currently no description for this property. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
 
 .. rst-class:: classref-item-separator
 

@@ -16,6 +16,13 @@ QueryContext2D
 
 Acts as a reference for :ref:`QueryGenerator2D<class_QueryGenerator2D>`\ s and :ref:`QueryTest2D<class_QueryTest2D>`\ s, providing ``Node2D``\ s and/or ``Vector2``\ s in an ``Array``.
 
+.. rst-class:: classref-introduction-group
+
+Description
+-----------
+
+Acts as a reference for :ref:`QueryGenerator2D<class_QueryGenerator2D>`\ s and :ref:`QueryTest2D<class_QueryTest2D>`\ s, providing ``Node2D``\ s and/or ``Vector2``\ s in an ``Array``.
+
 .. rst-class:: classref-reftable-group
 
 Methods
@@ -87,9 +94,7 @@ Returns only the positions of each context. Used in some :ref:`QueryTest2D<class
 
 ``Array`` **get_query_items**\ (\ ) :ref:`🔗<class_QueryContext2D_method_get_query_items>`
 
-.. container:: contribute
-
-	There is currently no description for this method. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
+Returns the list of current :ref:`QueryItem2D<class_QueryItem2D>`\ s.
 
 .. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

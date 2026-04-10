@@ -16,6 +16,13 @@ QueryGenerator2D
 
 Generates potential positions or nodes which are then stored as :ref:`QueryItem2D<class_QueryItem2D>`\ s for testing.
 
+.. rst-class:: classref-introduction-group
+
+Description
+-----------
+
+Generates potential positions or nodes which are then stored as :ref:`QueryItem2D<class_QueryItem2D>`\ s for testing.
+
 .. rst-class:: classref-reftable-group
 
 Properties

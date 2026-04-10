@@ -14,6 +14,13 @@ TestDotProduct2D
 
 A query test that tests the dot product between two :ref:`QueryContext2D<class_QueryContext2D>`\ s.
 
+.. rst-class:: classref-introduction-group
+
+Description
+-----------
+
+A query test that tests the dot product between two :ref:`QueryContext2D<class_QueryContext2D>`\ s.
+
 .. rst-class:: classref-reftable-group
 
 Properties
