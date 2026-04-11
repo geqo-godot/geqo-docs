@@ -8,7 +8,7 @@ GEQO was designed to be simple to pick up and start designing with. Here are the
 
 Installation
 ------------
-1. Grab the latest `release<https://github.com/geqo-godot/geqo/releases>`_ compatible with your Godot version.
+1. Grab the latest `release <https://github.com/geqo-godot/geqo/releases>`_ compatible with your Godot version.
 2. Unpack the addons/geqo folder into your /addons folder in your Godot project.
 3. Enable the addon within the Godot settings: Project > Project Settings > Plugins
 
