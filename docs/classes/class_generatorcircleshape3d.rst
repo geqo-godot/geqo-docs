@@ -40,7 +40,7 @@ Properties
    +---------------------------------------------+---------------------------------------------------------------------------------------------------------------+-----------+
    | ``float``                                   | :ref:`circle_radius<class_GeneratorCircleShape3D_property_circle_radius>`                                     | ``10.0``  |
    +---------------------------------------------+---------------------------------------------------------------------------------------------------------------+-----------+
-   | ``float``                                   | :ref:`post_projection_vertical_offset<class_GeneratorCircleShape3D_property_post_projection_vertical_offset>` | ``0.0``   |
+   | ``float``                                   | :ref:`post_projection_vertical_offset<class_GeneratorCircleShape3D_property_post_projection_vertical_offset>` | ``0.5``   |
    +---------------------------------------------+---------------------------------------------------------------------------------------------------------------+-----------+
    | ``float``                                   | :ref:`project_down<class_GeneratorCircleShape3D_property_project_down>`                                       | ``100.0`` |
    +---------------------------------------------+---------------------------------------------------------------------------------------------------------------+-----------+
@@ -159,7 +159,7 @@ Radius of the circle that expands from :ref:`circle_center<class_GeneratorCircle
 
 .. rst-class:: classref-property
 
-``float`` **post_projection_vertical_offset** = ``0.0`` :ref:`🔗<class_GeneratorCircleShape3D_property_post_projection_vertical_offset>`
+``float`` **post_projection_vertical_offset** = ``0.5`` :ref:`🔗<class_GeneratorCircleShape3D_property_post_projection_vertical_offset>`
 
 .. rst-class:: classref-property-setget
 

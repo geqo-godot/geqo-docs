@@ -31,11 +31,13 @@ Properties
 .. table::
    :widths: auto
 
-   +-----------+-----------------------------------------------------------------------------+-----------+
-   | ``float`` | :ref:`time_budget_ms<class_EnvironmentQuery3D_property_time_budget_ms>`     | ``1.0``   |
-   +-----------+-----------------------------------------------------------------------------+-----------+
-   | ``bool``  | :ref:`use_debug_shapes<class_EnvironmentQuery3D_property_use_debug_shapes>` | ``false`` |
-   +-----------+-----------------------------------------------------------------------------+-----------+
+   +------------+-----------------------------------------------------------------------------+-----------+
+   | ``Node3D`` | :ref:`querier<class_EnvironmentQuery3D_property_querier>`                   |           |
+   +------------+-----------------------------------------------------------------------------+-----------+
+   | ``float``  | :ref:`time_budget_ms<class_EnvironmentQuery3D_property_time_budget_ms>`     | ``1.0``   |
+   +------------+-----------------------------------------------------------------------------+-----------+
+   | ``bool``   | :ref:`use_debug_shapes<class_EnvironmentQuery3D_property_use_debug_shapes>` | ``false`` |
+   +------------+-----------------------------------------------------------------------------+-----------+
 
 .. rst-class:: classref-reftable-group
 
@@ -45,13 +47,13 @@ Methods
 .. table::
    :widths: auto
 
-   +--------------------------------------------------------------------+-------------------------------------------------------------------------------+
-   | :ref:`Array<class_Array>`\[:ref:`QueryItem3D<class_QueryItem3D>`\] | :ref:`get_query_items<class_EnvironmentQuery3D_method_get_query_items>`\ (\ ) |
-   +--------------------------------------------------------------------+-------------------------------------------------------------------------------+
-   | :ref:`QueryResult3D<class_QueryResult3D>`                          | :ref:`get_result<class_EnvironmentQuery3D_method_get_result>`\ (\ )           |
-   +--------------------------------------------------------------------+-------------------------------------------------------------------------------+
-   | |void|                                                             | :ref:`request_query<class_EnvironmentQuery3D_method_request_query>`\ (\ )     |
-   +--------------------------------------------------------------------+-------------------------------------------------------------------------------+
+   +-------------------------------------------+---------------------------------------------------------------------------------+
+   | :ref:`QueryResult3D<class_QueryResult3D>` | :ref:`get_result<class_EnvironmentQuery3D_method_get_result>`\ (\ )             |
+   +-------------------------------------------+---------------------------------------------------------------------------------+
+   | |void|                                    | :ref:`on_test_finished<class_EnvironmentQuery3D_method_on_test_finished>`\ (\ ) |
+   +-------------------------------------------+---------------------------------------------------------------------------------+
+   | |void|                                    | :ref:`request_query<class_EnvironmentQuery3D_method_request_query>`\ (\ )       |
+   +-------------------------------------------+---------------------------------------------------------------------------------+
 
 .. rst-class:: classref-section-separator
 
@@ -90,6 +92,25 @@ Emitted when the tests are finished, leading to finishing the query.
 
 Property Descriptions
 ---------------------
+
+.. _class_EnvironmentQuery3D_property_querier:
+
+.. rst-class:: classref-property
+
+``Node3D`` **querier** :ref:`🔗<class_EnvironmentQuery3D_property_querier>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_querier**\ (\ value\: ``Node3D``\ )
+- ``Node3D`` **get_querier**\ (\ )
+
+.. container:: contribute
+
+	There is currently no description for this property. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
+
+.. rst-class:: classref-item-separator
+
+----
 
 .. _class_EnvironmentQuery3D_property_time_budget_ms:
 
@@ -130,18 +151,6 @@ If ``true`` creates debug visuals in the environment, showing each :ref:`QueryIt
 Method Descriptions
 -------------------
 
-.. _class_EnvironmentQuery3D_method_get_query_items:
-
-.. rst-class:: classref-method
-
-:ref:`Array<class_Array>`\[:ref:`QueryItem3D<class_QueryItem3D>`\] **get_query_items**\ (\ ) :ref:`🔗<class_EnvironmentQuery3D_method_get_query_items>`
-
-Returns an array of :ref:`QueryItem3D<class_QueryItem3D>`\ s.
-
-.. rst-class:: classref-item-separator
-
-----
-
 .. _class_EnvironmentQuery3D_method_get_result:
 
 .. rst-class:: classref-method
@@ -149,6 +158,20 @@ Returns an array of :ref:`QueryItem3D<class_QueryItem3D>`\ s.
 :ref:`QueryResult3D<class_QueryResult3D>` **get_result**\ (\ ) :ref:`🔗<class_EnvironmentQuery3D_method_get_result>`
 
 After requesting a query, the :ref:`QueryResult3D<class_QueryResult3D>` is cached and can be called with this function.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_EnvironmentQuery3D_method_on_test_finished:
+
+.. rst-class:: classref-method
+
+|void| **on_test_finished**\ (\ ) :ref:`🔗<class_EnvironmentQuery3D_method_on_test_finished>`
+
+.. container:: contribute
+
+	There is currently no description for this method. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
 
 .. rst-class:: classref-item-separator
 

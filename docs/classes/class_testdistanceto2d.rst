@@ -29,17 +29,15 @@ Properties
 .. table::
    :widths: auto
 
-   +---------------------------------------------+---------------------------------------------------------------------+--------------------------------------------------------------------------+
-   | ``float``                                   | cost                                                                | ``1.39`` (overrides :ref:`QueryTest2D<class_QueryTest2D_property_cost>`) |
-   +---------------------------------------------+---------------------------------------------------------------------+--------------------------------------------------------------------------+
-   | :ref:`QueryContext2D<class_QueryContext2D>` | :ref:`distance_to<class_TestDistanceTo2D_property_distance_to>`     |                                                                          |
-   +---------------------------------------------+---------------------------------------------------------------------+--------------------------------------------------------------------------+
-   | ``float``                                   | :ref:`max_distance<class_TestDistanceTo2D_property_max_distance>`   | ``200.0``                                                                |
-   +---------------------------------------------+---------------------------------------------------------------------+--------------------------------------------------------------------------+
-   | ``float``                                   | :ref:`min_distance<class_TestDistanceTo2D_property_min_distance>`   | ``0.0``                                                                  |
-   +---------------------------------------------+---------------------------------------------------------------------+--------------------------------------------------------------------------+
-   | ``Curve``                                   | :ref:`scoring_curve<class_TestDistanceTo2D_property_scoring_curve>` |                                                                          |
-   +---------------------------------------------+---------------------------------------------------------------------+--------------------------------------------------------------------------+
+   +---------------------------------------------+-----------------------------------------------------------------+--------------------------------------------------------------------------------------+
+   | ``float``                                   | cost                                                            | ``1.29`` (overrides :ref:`QueryTest2D<class_QueryTest2D_property_cost>`)             |
+   +---------------------------------------------+-----------------------------------------------------------------+--------------------------------------------------------------------------------------+
+   | :ref:`QueryContext2D<class_QueryContext2D>` | :ref:`distance_to<class_TestDistanceTo2D_property_distance_to>` |                                                                                      |
+   +---------------------------------------------+-----------------------------------------------------------------+--------------------------------------------------------------------------------------+
+   | ``float``                                   | filter_max                                                      | ``50.0`` (overrides :ref:`QueryTest2D<class_QueryTest2D_property_filter_max>`)       |
+   +---------------------------------------------+-----------------------------------------------------------------+--------------------------------------------------------------------------------------+
+   | ``float``                                   | score_clamp_max                                                 | ``200.0`` (overrides :ref:`QueryTest2D<class_QueryTest2D_property_score_clamp_max>`) |
+   +---------------------------------------------+-----------------------------------------------------------------+--------------------------------------------------------------------------------------+
 
 .. rst-class:: classref-section-separator
 
@@ -62,57 +60,6 @@ Property Descriptions
 - :ref:`QueryContext2D<class_QueryContext2D>` **get_distance_to**\ (\ )
 
 What context the test will use for the checking the distance. If it's more than one location, then the results are averaged.
-
-.. rst-class:: classref-item-separator
-
-----
-
-.. _class_TestDistanceTo2D_property_max_distance:
-
-.. rst-class:: classref-property
-
-``float`` **max_distance** = ``200.0`` :ref:`🔗<class_TestDistanceTo2D_property_max_distance>`
-
-.. rst-class:: classref-property-setget
-
-- |void| **set_max_distance**\ (\ value\: ``float``\ )
-- ``float`` **get_max_distance**\ (\ )
-
-Maximum distance. If filtering is enabled, this filters it out.
-
-.. rst-class:: classref-item-separator
-
-----
-
-.. _class_TestDistanceTo2D_property_min_distance:
-
-.. rst-class:: classref-property
-
-``float`` **min_distance** = ``0.0`` :ref:`🔗<class_TestDistanceTo2D_property_min_distance>`
-
-.. rst-class:: classref-property-setget
-
-- |void| **set_min_distance**\ (\ value\: ``float``\ )
-- ``float`` **get_min_distance**\ (\ )
-
-Minimum distance. If filtering is enabled, this filters it out.
-
-.. rst-class:: classref-item-separator
-
-----
-
-.. _class_TestDistanceTo2D_property_scoring_curve:
-
-.. rst-class:: classref-property
-
-``Curve`` **scoring_curve** :ref:`🔗<class_TestDistanceTo2D_property_scoring_curve>`
-
-.. rst-class:: classref-property-setget
-
-- |void| **set_scoring_curve**\ (\ value\: ``Curve``\ )
-- ``Curve`` **get_scoring_curve**\ (\ )
-
-Scoring curve from :ref:`min_distance<class_TestDistanceTo2D_property_min_distance>` to :ref:`max_distance<class_TestDistanceTo2D_property_max_distance>`. Decides how much score each context member applies to the :ref:`QueryItem3D<class_QueryItem3D>`
 
 .. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

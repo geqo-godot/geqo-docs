@@ -31,15 +31,15 @@ Methods
 .. table::
    :widths: auto
 
-   +------------------------+----------------------------------------------------------------------------------------------------------+
-   | ``Array``              | :ref:`_get_context<class_QueryContext3D_private_method__get_context>`\ (\ ) |virtual| |required| |const| |
-   +------------------------+----------------------------------------------------------------------------------------------------------+
-   | ``Array``              | :ref:`get_context<class_QueryContext3D_method_get_context>`\ (\ )                                        |
-   +------------------------+----------------------------------------------------------------------------------------------------------+
-   | ``PackedVector3Array`` | :ref:`get_context_positions<class_QueryContext3D_method_get_context_positions>`\ (\ )                    |
-   +------------------------+----------------------------------------------------------------------------------------------------------+
-   | ``Array``              | :ref:`get_query_items<class_QueryContext3D_method_get_query_items>`\ (\ )                                |
-   +------------------------+----------------------------------------------------------------------------------------------------------+
+   +-----------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | ``Array``                               | :ref:`_get_context<class_QueryContext3D_private_method__get_context>`\ (\ query_instance\: :ref:`QueryInstance3D<class_QueryInstance3D>`\ ) |virtual| |required| |const| |
+   +-----------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | ``Array``                               | :ref:`get_context<class_QueryContext3D_method_get_context>`\ (\ query_instance\: :ref:`QueryInstance3D<class_QueryInstance3D>`\ )                                        |
+   +-----------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Array<class_Array>`\[``Node3D``\] | :ref:`get_context_nodes<class_QueryContext3D_method_get_context_nodes>`\ (\ query_instance\: :ref:`QueryInstance3D<class_QueryInstance3D>`\ )                            |
+   +-----------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | ``PackedVector3Array``                  | :ref:`get_context_positions<class_QueryContext3D_method_get_context_positions>`\ (\ query_instance\: :ref:`QueryInstance3D<class_QueryInstance3D>`\ )                    |
+   +-----------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. rst-class:: classref-section-separator
 
@@ -54,7 +54,7 @@ Method Descriptions
 
 .. rst-class:: classref-method
 
-``Array`` **_get_context**\ (\ ) |virtual| |required| |const| :ref:`🔗<class_QueryContext3D_private_method__get_context>`
+``Array`` **_get_context**\ (\ query_instance\: :ref:`QueryInstance3D<class_QueryInstance3D>`\ ) |virtual| |required| |const| :ref:`🔗<class_QueryContext3D_private_method__get_context>`
 
 Called on :ref:`QueryGenerator3D<class_QueryGenerator3D>`\ s and ``QueryTest3Ds`` to get a list of ``Node3Ds`` and/or ``Vector3``\ s.
 
@@ -68,9 +68,23 @@ Called on :ref:`QueryGenerator3D<class_QueryGenerator3D>`\ s and ``QueryTest3Ds`
 
 .. rst-class:: classref-method
 
-``Array`` **get_context**\ (\ ) :ref:`🔗<class_QueryContext3D_method_get_context>`
+``Array`` **get_context**\ (\ query_instance\: :ref:`QueryInstance3D<class_QueryInstance3D>`\ ) :ref:`🔗<class_QueryContext3D_method_get_context>`
 
 Called on :ref:`QueryGenerator3D<class_QueryGenerator3D>`\ s and ``QueryTest3Ds`` to get a list of ``Node3Ds`` and/or ``Vector3``\ s.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_QueryContext3D_method_get_context_nodes:
+
+.. rst-class:: classref-method
+
+:ref:`Array<class_Array>`\[``Node3D``\] **get_context_nodes**\ (\ query_instance\: :ref:`QueryInstance3D<class_QueryInstance3D>`\ ) :ref:`🔗<class_QueryContext3D_method_get_context_nodes>`
+
+.. container:: contribute
+
+	There is currently no description for this method. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
 
 .. rst-class:: classref-item-separator
 
@@ -80,21 +94,9 @@ Called on :ref:`QueryGenerator3D<class_QueryGenerator3D>`\ s and ``QueryTest3Ds`
 
 .. rst-class:: classref-method
 
-``PackedVector3Array`` **get_context_positions**\ (\ ) :ref:`🔗<class_QueryContext3D_method_get_context_positions>`
+``PackedVector3Array`` **get_context_positions**\ (\ query_instance\: :ref:`QueryInstance3D<class_QueryInstance3D>`\ ) :ref:`🔗<class_QueryContext3D_method_get_context_positions>`
 
 Returns only the positions of each context. Used in some :ref:`QueryTest3D<class_QueryTest3D>`\ s where collisions aren't needed.
-
-.. rst-class:: classref-item-separator
-
-----
-
-.. _class_QueryContext3D_method_get_query_items:
-
-.. rst-class:: classref-method
-
-``Array`` **get_query_items**\ (\ ) :ref:`🔗<class_QueryContext3D_method_get_query_items>`
-
-Returns the list of current :ref:`QueryItem3D<class_QueryItem3D>`\ s.
 
 .. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

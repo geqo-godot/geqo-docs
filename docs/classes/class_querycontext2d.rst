@@ -31,15 +31,15 @@ Methods
 .. table::
    :widths: auto
 
-   +------------------------+----------------------------------------------------------------------------------------------------------+
-   | ``Array``              | :ref:`_get_context<class_QueryContext2D_private_method__get_context>`\ (\ ) |virtual| |required| |const| |
-   +------------------------+----------------------------------------------------------------------------------------------------------+
-   | ``Array``              | :ref:`get_context<class_QueryContext2D_method_get_context>`\ (\ )                                        |
-   +------------------------+----------------------------------------------------------------------------------------------------------+
-   | ``PackedVector2Array`` | :ref:`get_context_positions<class_QueryContext2D_method_get_context_positions>`\ (\ )                    |
-   +------------------------+----------------------------------------------------------------------------------------------------------+
-   | ``Array``              | :ref:`get_query_items<class_QueryContext2D_method_get_query_items>`\ (\ )                                |
-   +------------------------+----------------------------------------------------------------------------------------------------------+
+   +-----------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | ``Array``                               | :ref:`_get_context<class_QueryContext2D_private_method__get_context>`\ (\ query_instance\: :ref:`QueryInstance2D<class_QueryInstance2D>`\ ) |virtual| |required| |const| |
+   +-----------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | ``Array``                               | :ref:`get_context<class_QueryContext2D_method_get_context>`\ (\ query_instance\: :ref:`QueryInstance2D<class_QueryInstance2D>`\ )                                        |
+   +-----------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Array<class_Array>`\[``Node2D``\] | :ref:`get_context_nodes<class_QueryContext2D_method_get_context_nodes>`\ (\ query_instance\: :ref:`QueryInstance2D<class_QueryInstance2D>`\ )                            |
+   +-----------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | ``PackedVector2Array``                  | :ref:`get_context_positions<class_QueryContext2D_method_get_context_positions>`\ (\ query_instance\: :ref:`QueryInstance2D<class_QueryInstance2D>`\ )                    |
+   +-----------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. rst-class:: classref-section-separator
 
@@ -54,7 +54,7 @@ Method Descriptions
 
 .. rst-class:: classref-method
 
-``Array`` **_get_context**\ (\ ) |virtual| |required| |const| :ref:`🔗<class_QueryContext2D_private_method__get_context>`
+``Array`` **_get_context**\ (\ query_instance\: :ref:`QueryInstance2D<class_QueryInstance2D>`\ ) |virtual| |required| |const| :ref:`🔗<class_QueryContext2D_private_method__get_context>`
 
 Called on :ref:`QueryGenerator2D<class_QueryGenerator2D>`\ s and ``QueryTest2Ds`` to get a list of ``Node2Ds`` and/or ``Vector2``\ s.
 
@@ -68,9 +68,23 @@ Called on :ref:`QueryGenerator2D<class_QueryGenerator2D>`\ s and ``QueryTest2Ds`
 
 .. rst-class:: classref-method
 
-``Array`` **get_context**\ (\ ) :ref:`🔗<class_QueryContext2D_method_get_context>`
+``Array`` **get_context**\ (\ query_instance\: :ref:`QueryInstance2D<class_QueryInstance2D>`\ ) :ref:`🔗<class_QueryContext2D_method_get_context>`
 
 Called on :ref:`QueryGenerator2D<class_QueryGenerator2D>`\ s and ``QueryTest2Ds`` to get a list of ``Node2Ds`` and/or ``Vector2``\ s.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_QueryContext2D_method_get_context_nodes:
+
+.. rst-class:: classref-method
+
+:ref:`Array<class_Array>`\[``Node2D``\] **get_context_nodes**\ (\ query_instance\: :ref:`QueryInstance2D<class_QueryInstance2D>`\ ) :ref:`🔗<class_QueryContext2D_method_get_context_nodes>`
+
+.. container:: contribute
+
+	There is currently no description for this method. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
 
 .. rst-class:: classref-item-separator
 
@@ -80,21 +94,9 @@ Called on :ref:`QueryGenerator2D<class_QueryGenerator2D>`\ s and ``QueryTest2Ds`
 
 .. rst-class:: classref-method
 
-``PackedVector2Array`` **get_context_positions**\ (\ ) :ref:`🔗<class_QueryContext2D_method_get_context_positions>`
+``PackedVector2Array`` **get_context_positions**\ (\ query_instance\: :ref:`QueryInstance2D<class_QueryInstance2D>`\ ) :ref:`🔗<class_QueryContext2D_method_get_context_positions>`
 
 Returns only the positions of each context. Used in some :ref:`QueryTest2D<class_QueryTest2D>`\ s where collisions aren't needed.
-
-.. rst-class:: classref-item-separator
-
-----
-
-.. _class_QueryContext2D_method_get_query_items:
-
-.. rst-class:: classref-method
-
-``Array`` **get_query_items**\ (\ ) :ref:`🔗<class_QueryContext2D_method_get_query_items>`
-
-Returns the list of current :ref:`QueryItem2D<class_QueryItem2D>`\ s.
 
 .. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

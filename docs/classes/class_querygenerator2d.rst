@@ -35,6 +35,18 @@ Properties
    | :ref:`RaycastMode<enum_QueryGenerator2D_RaycastMode>` | :ref:`raycast_mode<class_QueryGenerator2D_property_raycast_mode>` | ``0`` |
    +-------------------------------------------------------+-------------------------------------------------------------------+-------+
 
+.. rst-class:: classref-reftable-group
+
+Methods
+-------
+
+.. table::
+   :widths: auto
+
+   +----------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | ``Dictionary`` | :ref:`cast_ray_projection<class_QueryGenerator2D_method_cast_ray_projection>`\ (\ start_pos\: ``Vector2``, end_pos\: ``Vector2``, exclusions\: ``Array``, col_mask\: ``int``\ ) |
+   +----------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
 .. rst-class:: classref-section-separator
 
 ----
@@ -112,6 +124,25 @@ Property Descriptions
 - :ref:`RaycastMode<enum_QueryGenerator2D_RaycastMode>` **get_raycast_mode**\ (\ )
 
 Determines what type of collisions the raycast will detect, usually used by projections.
+
+.. rst-class:: classref-section-separator
+
+----
+
+.. rst-class:: classref-descriptions-group
+
+Method Descriptions
+-------------------
+
+.. _class_QueryGenerator2D_method_cast_ray_projection:
+
+.. rst-class:: classref-method
+
+``Dictionary`` **cast_ray_projection**\ (\ start_pos\: ``Vector2``, end_pos\: ``Vector2``, exclusions\: ``Array``, col_mask\: ``int``\ ) :ref:`🔗<class_QueryGenerator2D_method_cast_ray_projection>`
+
+.. container:: contribute
+
+	There is currently no description for this method. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
 
 .. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

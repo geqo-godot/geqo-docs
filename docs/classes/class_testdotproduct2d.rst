@@ -29,17 +29,88 @@ Properties
 .. table::
    :widths: auto
 
-   +---------------------------------------------+---------------------------------------------------------------+--------------------------------------------------------------------------+
-   | ``float``                                   | cost                                                          | ``0.78`` (overrides :ref:`QueryTest2D<class_QueryTest2D_property_cost>`) |
-   +---------------------------------------------+---------------------------------------------------------------+--------------------------------------------------------------------------+
-   | :ref:`QueryContext2D<class_QueryContext2D>` | :ref:`from_place<class_TestDotProduct2D_property_from_place>` |                                                                          |
-   +---------------------------------------------+---------------------------------------------------------------+--------------------------------------------------------------------------+
-   | ``float``                                   | :ref:`max_value<class_TestDotProduct2D_property_max_value>`   | ``1.0``                                                                  |
-   +---------------------------------------------+---------------------------------------------------------------+--------------------------------------------------------------------------+
-   | ``float``                                   | :ref:`min_value<class_TestDotProduct2D_property_min_value>`   | ``0.5``                                                                  |
-   +---------------------------------------------+---------------------------------------------------------------+--------------------------------------------------------------------------+
-   | :ref:`QueryContext2D<class_QueryContext2D>` | :ref:`to_target<class_TestDotProduct2D_property_to_target>`   |                                                                          |
-   +---------------------------------------------+---------------------------------------------------------------+--------------------------------------------------------------------------+
+   +---------------------------------------------+-------------------------------------------------------------------------------+--------------------------------------------------------------------------+
+   | ``float``                                   | cost                                                                          | ``0.78`` (overrides :ref:`QueryTest2D<class_QueryTest2D_property_cost>`) |
+   +---------------------------------------------+-------------------------------------------------------------------------------+--------------------------------------------------------------------------+
+   | :ref:`QueryContext2D<class_QueryContext2D>` | :ref:`line_a_rotation<class_TestDotProduct2D_property_line_a_rotation>`       |                                                                          |
+   +---------------------------------------------+-------------------------------------------------------------------------------+--------------------------------------------------------------------------+
+   | :ref:`QueryContext2D<class_QueryContext2D>` | :ref:`line_b_rotation<class_TestDotProduct2D_property_line_b_rotation>`       |                                                                          |
+   +---------------------------------------------+-------------------------------------------------------------------------------+--------------------------------------------------------------------------+
+   | ``bool``                                    | :ref:`use_absolute_value<class_TestDotProduct2D_property_use_absolute_value>` | ``false``                                                                |
+   +---------------------------------------------+-------------------------------------------------------------------------------+--------------------------------------------------------------------------+
+
+.. rst-class:: classref-reftable-group
+
+Methods
+-------
+
+.. table::
+   :widths: auto
+
+   +-------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`QueryContext2D<class_QueryContext2D>`     | :ref:`get_line_a_from<class_TestDotProduct2D_method_get_line_a_from>`\ (\ )                                                         |
+   +-------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`LineMode<enum_TestDotProduct2D_LineMode>` | :ref:`get_line_a_mode<class_TestDotProduct2D_method_get_line_a_mode>`\ (\ ) |const|                                                 |
+   +-------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`QueryContext2D<class_QueryContext2D>`     | :ref:`get_line_a_to<class_TestDotProduct2D_method_get_line_a_to>`\ (\ )                                                             |
+   +-------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`QueryContext2D<class_QueryContext2D>`     | :ref:`get_line_b_from<class_TestDotProduct2D_method_get_line_b_from>`\ (\ )                                                         |
+   +-------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`LineMode<enum_TestDotProduct2D_LineMode>` | :ref:`get_line_b_mode<class_TestDotProduct2D_method_get_line_b_mode>`\ (\ ) |const|                                                 |
+   +-------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`QueryContext2D<class_QueryContext2D>`     | :ref:`get_line_b_to<class_TestDotProduct2D_method_get_line_b_to>`\ (\ )                                                             |
+   +-------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                                          | :ref:`set_line_a_from<class_TestDotProduct2D_method_set_line_a_from>`\ (\ context\: :ref:`QueryContext2D<class_QueryContext2D>`\ )  |
+   +-------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                                          | :ref:`set_line_a_mode<class_TestDotProduct2D_method_set_line_a_mode>`\ (\ mode\: :ref:`LineMode<enum_TestDotProduct2D_LineMode>`\ ) |
+   +-------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                                          | :ref:`set_line_a_to<class_TestDotProduct2D_method_set_line_a_to>`\ (\ context\: :ref:`QueryContext2D<class_QueryContext2D>`\ )      |
+   +-------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                                          | :ref:`set_line_b_from<class_TestDotProduct2D_method_set_line_b_from>`\ (\ context\: :ref:`QueryContext2D<class_QueryContext2D>`\ )  |
+   +-------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                                          | :ref:`set_line_b_mode<class_TestDotProduct2D_method_set_line_b_mode>`\ (\ mode\: :ref:`LineMode<enum_TestDotProduct2D_LineMode>`\ ) |
+   +-------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                                          | :ref:`set_line_b_to<class_TestDotProduct2D_method_set_line_b_to>`\ (\ context\: :ref:`QueryContext2D<class_QueryContext2D>`\ )      |
+   +-------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
+
+.. rst-class:: classref-section-separator
+
+----
+
+.. rst-class:: classref-descriptions-group
+
+Enumerations
+------------
+
+.. _enum_TestDotProduct2D_LineMode:
+
+.. rst-class:: classref-enumeration
+
+enum **LineMode**: :ref:`🔗<enum_TestDotProduct2D_LineMode>`
+
+.. _class_TestDotProduct2D_constant_LINE_ROTATION:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`LineMode<enum_TestDotProduct2D_LineMode>` **LINE_ROTATION** = ``0``
+
+.. container:: contribute
+
+	There is currently no description for this enum. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
+
+
+
+.. _class_TestDotProduct2D_constant_LINE_TWO_POINTS:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`LineMode<enum_TestDotProduct2D_LineMode>` **LINE_TWO_POINTS** = ``1``
+
+.. container:: contribute
+
+	There is currently no description for this enum. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
+
+
 
 .. rst-class:: classref-section-separator
 
@@ -50,16 +121,16 @@ Properties
 Property Descriptions
 ---------------------
 
-.. _class_TestDotProduct2D_property_from_place:
+.. _class_TestDotProduct2D_property_line_a_rotation:
 
 .. rst-class:: classref-property
 
-:ref:`QueryContext2D<class_QueryContext2D>` **from_place** :ref:`🔗<class_TestDotProduct2D_property_from_place>`
+:ref:`QueryContext2D<class_QueryContext2D>` **line_a_rotation** :ref:`🔗<class_TestDotProduct2D_property_line_a_rotation>`
 
 .. rst-class:: classref-property-setget
 
-- |void| **set_from_place**\ (\ value\: :ref:`QueryContext2D<class_QueryContext2D>`\ )
-- :ref:`QueryContext2D<class_QueryContext2D>` **get_from_place**\ (\ )
+- |void| **set_line_a_rotation**\ (\ value\: :ref:`QueryContext2D<class_QueryContext2D>`\ )
+- :ref:`QueryContext2D<class_QueryContext2D>` **get_line_a_rotation**\ (\ )
 
 .. container:: contribute
 
@@ -69,16 +140,16 @@ Property Descriptions
 
 ----
 
-.. _class_TestDotProduct2D_property_max_value:
+.. _class_TestDotProduct2D_property_line_b_rotation:
 
 .. rst-class:: classref-property
 
-``float`` **max_value** = ``1.0`` :ref:`🔗<class_TestDotProduct2D_property_max_value>`
+:ref:`QueryContext2D<class_QueryContext2D>` **line_b_rotation** :ref:`🔗<class_TestDotProduct2D_property_line_b_rotation>`
 
 .. rst-class:: classref-property-setget
 
-- |void| **set_max_value**\ (\ value\: ``float``\ )
-- ``float`` **get_max_value**\ (\ )
+- |void| **set_line_b_rotation**\ (\ value\: :ref:`QueryContext2D<class_QueryContext2D>`\ )
+- :ref:`QueryContext2D<class_QueryContext2D>` **get_line_b_rotation**\ (\ )
 
 .. container:: contribute
 
@@ -88,39 +159,193 @@ Property Descriptions
 
 ----
 
-.. _class_TestDotProduct2D_property_min_value:
+.. _class_TestDotProduct2D_property_use_absolute_value:
 
 .. rst-class:: classref-property
 
-``float`` **min_value** = ``0.5`` :ref:`🔗<class_TestDotProduct2D_property_min_value>`
+``bool`` **use_absolute_value** = ``false`` :ref:`🔗<class_TestDotProduct2D_property_use_absolute_value>`
 
 .. rst-class:: classref-property-setget
 
-- |void| **set_min_value**\ (\ value\: ``float``\ )
-- ``float`` **get_min_value**\ (\ )
+- |void| **set_use_absolute_value**\ (\ value\: ``bool``\ )
+- ``bool`` **get_use_absolute_value**\ (\ )
 
 .. container:: contribute
 
 	There is currently no description for this property. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
+
+.. rst-class:: classref-section-separator
+
+----
+
+.. rst-class:: classref-descriptions-group
+
+Method Descriptions
+-------------------
+
+.. _class_TestDotProduct2D_method_get_line_a_from:
+
+.. rst-class:: classref-method
+
+:ref:`QueryContext2D<class_QueryContext2D>` **get_line_a_from**\ (\ ) :ref:`🔗<class_TestDotProduct2D_method_get_line_a_from>`
+
+.. container:: contribute
+
+	There is currently no description for this method. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
 
 .. rst-class:: classref-item-separator
 
 ----
 
-.. _class_TestDotProduct2D_property_to_target:
+.. _class_TestDotProduct2D_method_get_line_a_mode:
 
-.. rst-class:: classref-property
+.. rst-class:: classref-method
 
-:ref:`QueryContext2D<class_QueryContext2D>` **to_target** :ref:`🔗<class_TestDotProduct2D_property_to_target>`
-
-.. rst-class:: classref-property-setget
-
-- |void| **set_to_target**\ (\ value\: :ref:`QueryContext2D<class_QueryContext2D>`\ )
-- :ref:`QueryContext2D<class_QueryContext2D>` **get_to_target**\ (\ )
+:ref:`LineMode<enum_TestDotProduct2D_LineMode>` **get_line_a_mode**\ (\ ) |const| :ref:`🔗<class_TestDotProduct2D_method_get_line_a_mode>`
 
 .. container:: contribute
 
-	There is currently no description for this property. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
+	There is currently no description for this method. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_TestDotProduct2D_method_get_line_a_to:
+
+.. rst-class:: classref-method
+
+:ref:`QueryContext2D<class_QueryContext2D>` **get_line_a_to**\ (\ ) :ref:`🔗<class_TestDotProduct2D_method_get_line_a_to>`
+
+.. container:: contribute
+
+	There is currently no description for this method. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_TestDotProduct2D_method_get_line_b_from:
+
+.. rst-class:: classref-method
+
+:ref:`QueryContext2D<class_QueryContext2D>` **get_line_b_from**\ (\ ) :ref:`🔗<class_TestDotProduct2D_method_get_line_b_from>`
+
+.. container:: contribute
+
+	There is currently no description for this method. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_TestDotProduct2D_method_get_line_b_mode:
+
+.. rst-class:: classref-method
+
+:ref:`LineMode<enum_TestDotProduct2D_LineMode>` **get_line_b_mode**\ (\ ) |const| :ref:`🔗<class_TestDotProduct2D_method_get_line_b_mode>`
+
+.. container:: contribute
+
+	There is currently no description for this method. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_TestDotProduct2D_method_get_line_b_to:
+
+.. rst-class:: classref-method
+
+:ref:`QueryContext2D<class_QueryContext2D>` **get_line_b_to**\ (\ ) :ref:`🔗<class_TestDotProduct2D_method_get_line_b_to>`
+
+.. container:: contribute
+
+	There is currently no description for this method. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_TestDotProduct2D_method_set_line_a_from:
+
+.. rst-class:: classref-method
+
+|void| **set_line_a_from**\ (\ context\: :ref:`QueryContext2D<class_QueryContext2D>`\ ) :ref:`🔗<class_TestDotProduct2D_method_set_line_a_from>`
+
+.. container:: contribute
+
+	There is currently no description for this method. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_TestDotProduct2D_method_set_line_a_mode:
+
+.. rst-class:: classref-method
+
+|void| **set_line_a_mode**\ (\ mode\: :ref:`LineMode<enum_TestDotProduct2D_LineMode>`\ ) :ref:`🔗<class_TestDotProduct2D_method_set_line_a_mode>`
+
+.. container:: contribute
+
+	There is currently no description for this method. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_TestDotProduct2D_method_set_line_a_to:
+
+.. rst-class:: classref-method
+
+|void| **set_line_a_to**\ (\ context\: :ref:`QueryContext2D<class_QueryContext2D>`\ ) :ref:`🔗<class_TestDotProduct2D_method_set_line_a_to>`
+
+.. container:: contribute
+
+	There is currently no description for this method. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_TestDotProduct2D_method_set_line_b_from:
+
+.. rst-class:: classref-method
+
+|void| **set_line_b_from**\ (\ context\: :ref:`QueryContext2D<class_QueryContext2D>`\ ) :ref:`🔗<class_TestDotProduct2D_method_set_line_b_from>`
+
+.. container:: contribute
+
+	There is currently no description for this method. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_TestDotProduct2D_method_set_line_b_mode:
+
+.. rst-class:: classref-method
+
+|void| **set_line_b_mode**\ (\ mode\: :ref:`LineMode<enum_TestDotProduct2D_LineMode>`\ ) :ref:`🔗<class_TestDotProduct2D_method_set_line_b_mode>`
+
+.. container:: contribute
+
+	There is currently no description for this method. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_TestDotProduct2D_method_set_line_b_to:
+
+.. rst-class:: classref-method
+
+|void| **set_line_b_to**\ (\ context\: :ref:`QueryContext2D<class_QueryContext2D>`\ ) :ref:`🔗<class_TestDotProduct2D_method_set_line_b_to>`
+
+.. container:: contribute
+
+	There is currently no description for this method. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
 
 .. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

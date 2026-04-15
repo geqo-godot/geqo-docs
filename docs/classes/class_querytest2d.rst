@@ -12,7 +12,7 @@ QueryTest2D
 
 **Inherits:** ``Node2D``
 
-**Inherited By:** :ref:`TestDistanceTo2D<class_TestDistanceTo2D>`, :ref:`TestDotProduct2D<class_TestDotProduct2D>`, :ref:`TestRaycastTo2D<class_TestRaycastTo2D>`
+**Inherited By:** :ref:`TestDistanceTo2D<class_TestDistanceTo2D>`, :ref:`TestDotProduct2D<class_TestDotProduct2D>`, :ref:`TestIntersectsArea2D<class_TestIntersectsArea2D>`, :ref:`TestRaycastTo2D<class_TestRaycastTo2D>`
 
 Tests each :ref:`QueryItem2D<class_QueryItem2D>` from a :ref:`QueryGenerator2D<class_QueryGenerator2D>` to determine which is the best option.
 
@@ -31,15 +31,41 @@ Properties
 .. table::
    :widths: auto
 
-   +--------------------------------------------------------+------------------------------------------------------------------------------------------------------+---------+
-   | ``float``                                              | :ref:`cost<class_QueryTest2D_property_cost>`                                                         | ``0.0`` |
-   +--------------------------------------------------------+------------------------------------------------------------------------------------------------------+---------+
-   | :ref:`FilterOperator<enum_QueryTest2D_FilterOperator>` | :ref:`multiple_context_filter_operator<class_QueryTest2D_property_multiple_context_filter_operator>` | ``0``   |
-   +--------------------------------------------------------+------------------------------------------------------------------------------------------------------+---------+
-   | :ref:`ScoreOperator<enum_QueryTest2D_ScoreOperator>`   | :ref:`multiple_context_score_operator<class_QueryTest2D_property_multiple_context_score_operator>`   | ``0``   |
-   +--------------------------------------------------------+------------------------------------------------------------------------------------------------------+---------+
-   | :ref:`TestPurpose<enum_QueryTest2D_TestPurpose>`       | :ref:`test_purpose<class_QueryTest2D_property_test_purpose>`                                         | ``0``   |
-   +--------------------------------------------------------+------------------------------------------------------------------------------------------------------+---------+
+   +------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+----------+
+   | ``bool``                                                               | :ref:`bool_match<class_QueryTest2D_property_bool_match>`                                                           | ``true`` |
+   +------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+----------+
+   | ``float``                                                              | :ref:`cost<class_QueryTest2D_property_cost>`                                                                       | ``0.0``  |
+   +------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+----------+
+   | ``bool``                                                               | :ref:`filter_bool_match<class_QueryTest2D_property_filter_bool_match>`                                             | ``true`` |
+   +------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+----------+
+   | ``float``                                                              | :ref:`filter_max<class_QueryTest2D_property_filter_max>`                                                           | ``0.0``  |
+   +------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+----------+
+   | ``float``                                                              | :ref:`filter_min<class_QueryTest2D_property_filter_min>`                                                           | ``0.0``  |
+   +------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+----------+
+   | :ref:`MultipleContextFilterOp<enum_GEQOEnums_MultipleContextFilterOp>` | :ref:`filter_multiple_context_filter_operator<class_QueryTest2D_property_filter_multiple_context_filter_operator>` | ``0``    |
+   +------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+----------+
+   | :ref:`FilterType<enum_GEQOEnums_FilterType>`                           | :ref:`filter_type<class_QueryTest2D_property_filter_type>`                                                         | ``0``    |
+   +------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+----------+
+   | ``bool``                                                               | :ref:`score_bool_match<class_QueryTest2D_property_score_bool_match>`                                               | ``true`` |
+   +------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+----------+
+   | ``float``                                                              | :ref:`score_clamp_max<class_QueryTest2D_property_score_clamp_max>`                                                 | ``0.0``  |
+   +------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+----------+
+   | :ref:`ScoreClampType<enum_GEQOEnums_ScoreClampType>`                   | :ref:`score_clamp_max_type<class_QueryTest2D_property_score_clamp_max_type>`                                       | ``0``    |
+   +------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+----------+
+   | ``float``                                                              | :ref:`score_clamp_min<class_QueryTest2D_property_score_clamp_min>`                                                 | ``0.0``  |
+   +------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+----------+
+   | :ref:`ScoreClampType<enum_GEQOEnums_ScoreClampType>`                   | :ref:`score_clamp_min_type<class_QueryTest2D_property_score_clamp_min_type>`                                       | ``0``    |
+   +------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+----------+
+   | ``Curve``                                                              | :ref:`score_curve<class_QueryTest2D_property_score_curve>`                                                         |          |
+   +------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+----------+
+   | ``float``                                                              | :ref:`score_factor<class_QueryTest2D_property_score_factor>`                                                       | ``1.0``  |
+   +------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+----------+
+   | :ref:`MultipleContextScoreOp<enum_GEQOEnums_MultipleContextScoreOp>`   | :ref:`score_multiple_context_score_operator<class_QueryTest2D_property_score_multiple_context_score_operator>`     | ``0``    |
+   +------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+----------+
+   | :ref:`TestPurpose<enum_GEQOEnums_TestPurpose>`                         | :ref:`test_purpose<class_QueryTest2D_property_test_purpose>`                                                       | ``0``    |
+   +------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+----------+
+   | :ref:`TestType<enum_GEQOEnums_TestType>`                               | :ref:`test_type<class_QueryTest2D_property_test_type>`                                                             | ``0``    |
+   +------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+----------+
 
 .. rst-class:: classref-reftable-group
 
@@ -49,9 +75,11 @@ Methods
 .. table::
    :widths: auto
 
-   +--------+-----------------------------------------------------------------------------------------------------------------------------------------------------+
-   | |void| | :ref:`_perform_test<class_QueryTest2D_private_method__perform_test>`\ (\ projection\: :ref:`QueryItem2D<class_QueryItem2D>`\ ) |virtual| |required| |
-   +--------+-----------------------------------------------------------------------------------------------------------------------------------------------------+
+   +--------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void| | :ref:`_perform_test<class_QueryTest2D_private_method__perform_test>`\ (\ query_instance\: :ref:`QueryInstance2D<class_QueryInstance2D>`\ ) |virtual| |required| |
+   +--------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void| | :ref:`end_test<class_QueryTest2D_method_end_test>`\ (\ )                                                                                                        |
+   +--------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. rst-class:: classref-section-separator
 
@@ -59,98 +87,18 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+Signals
+-------
 
-.. _enum_QueryTest2D_TestPurpose:
+.. _class_QueryTest2D_signal_test_finished:
 
-.. rst-class:: classref-enumeration
+.. rst-class:: classref-signal
 
-enum **TestPurpose**: :ref:`🔗<enum_QueryTest2D_TestPurpose>`
+**test_finished**\ (\ ) :ref:`🔗<class_QueryTest2D_signal_test_finished>`
 
-.. _class_QueryTest2D_constant_FILTER_SCORE:
+.. container:: contribute
 
-.. rst-class:: classref-enumeration-constant
-
-:ref:`TestPurpose<enum_QueryTest2D_TestPurpose>` **FILTER_SCORE** = ``0``
-
-Applies both scoring and filtering.
-
-.. _class_QueryTest2D_constant_FILTER_ONLY:
-
-.. rst-class:: classref-enumeration-constant
-
-:ref:`TestPurpose<enum_QueryTest2D_TestPurpose>` **FILTER_ONLY** = ``1``
-
-Applies only filtering.
-
-.. _class_QueryTest2D_constant_SCORE_ONLY:
-
-.. rst-class:: classref-enumeration-constant
-
-:ref:`TestPurpose<enum_QueryTest2D_TestPurpose>` **SCORE_ONLY** = ``2``
-
-Applies only scoring.
-
-.. rst-class:: classref-item-separator
-
-----
-
-.. _enum_QueryTest2D_ScoreOperator:
-
-.. rst-class:: classref-enumeration
-
-enum **ScoreOperator**: :ref:`🔗<enum_QueryTest2D_ScoreOperator>`
-
-.. _class_QueryTest2D_constant_AVERAGE_SCORE:
-
-.. rst-class:: classref-enumeration-constant
-
-:ref:`ScoreOperator<enum_QueryTest2D_ScoreOperator>` **AVERAGE_SCORE** = ``0``
-
-Takes the average score of each context member.
-
-.. _class_QueryTest2D_constant_MAX_SCORE:
-
-.. rst-class:: classref-enumeration-constant
-
-:ref:`ScoreOperator<enum_QueryTest2D_ScoreOperator>` **MAX_SCORE** = ``1``
-
-Takes the max score of each context member.
-
-.. _class_QueryTest2D_constant_MIN_SCORE:
-
-.. rst-class:: classref-enumeration-constant
-
-:ref:`ScoreOperator<enum_QueryTest2D_ScoreOperator>` **MIN_SCORE** = ``2``
-
-Takes the min score of each context member.
-
-.. rst-class:: classref-item-separator
-
-----
-
-.. _enum_QueryTest2D_FilterOperator:
-
-.. rst-class:: classref-enumeration
-
-enum **FilterOperator**: :ref:`🔗<enum_QueryTest2D_FilterOperator>`
-
-.. _class_QueryTest2D_constant_ANY_PASS:
-
-.. rst-class:: classref-enumeration-constant
-
-:ref:`FilterOperator<enum_QueryTest2D_FilterOperator>` **ANY_PASS** = ``0``
-
-Any context member must pass the test.
-
-.. _class_QueryTest2D_constant_ALL_PASS:
-
-.. rst-class:: classref-enumeration-constant
-
-:ref:`FilterOperator<enum_QueryTest2D_FilterOperator>` **ALL_PASS** = ``1``
-
-All context members must pass the test.
+	There is currently no description for this signal. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
 
 .. rst-class:: classref-section-separator
 
@@ -160,6 +108,25 @@ All context members must pass the test.
 
 Property Descriptions
 ---------------------
+
+.. _class_QueryTest2D_property_bool_match:
+
+.. rst-class:: classref-property
+
+``bool`` **bool_match** = ``true`` :ref:`🔗<class_QueryTest2D_property_bool_match>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_bool_match**\ (\ value\: ``bool``\ )
+- ``bool`` **get_bool_match**\ (\ )
+
+.. container:: contribute
+
+	There is currently no description for this property. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
+
+.. rst-class:: classref-item-separator
+
+----
 
 .. _class_QueryTest2D_property_cost:
 
@@ -178,35 +145,248 @@ How expensive this test will be to execute.
 
 ----
 
-.. _class_QueryTest2D_property_multiple_context_filter_operator:
+.. _class_QueryTest2D_property_filter_bool_match:
 
 .. rst-class:: classref-property
 
-:ref:`FilterOperator<enum_QueryTest2D_FilterOperator>` **multiple_context_filter_operator** = ``0`` :ref:`🔗<class_QueryTest2D_property_multiple_context_filter_operator>`
+``bool`` **filter_bool_match** = ``true`` :ref:`🔗<class_QueryTest2D_property_filter_bool_match>`
 
 .. rst-class:: classref-property-setget
 
-- |void| **set_context_filter_operator**\ (\ value\: :ref:`FilterOperator<enum_QueryTest2D_FilterOperator>`\ )
-- :ref:`FilterOperator<enum_QueryTest2D_FilterOperator>` **get_context_filter_operator**\ (\ )
+- |void| **set_bool_match**\ (\ value\: ``bool``\ )
+- ``bool`` **get_bool_match**\ (\ )
 
-What conditions must be met for each context member while filtering.
+.. container:: contribute
+
+	There is currently no description for this property. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
 
 .. rst-class:: classref-item-separator
 
 ----
 
-.. _class_QueryTest2D_property_multiple_context_score_operator:
+.. _class_QueryTest2D_property_filter_max:
 
 .. rst-class:: classref-property
 
-:ref:`ScoreOperator<enum_QueryTest2D_ScoreOperator>` **multiple_context_score_operator** = ``0`` :ref:`🔗<class_QueryTest2D_property_multiple_context_score_operator>`
+``float`` **filter_max** = ``0.0`` :ref:`🔗<class_QueryTest2D_property_filter_max>`
 
 .. rst-class:: classref-property-setget
 
-- |void| **set_context_score_operator**\ (\ value\: :ref:`ScoreOperator<enum_QueryTest2D_ScoreOperator>`\ )
-- :ref:`ScoreOperator<enum_QueryTest2D_ScoreOperator>` **get_context_score_operator**\ (\ )
+- |void| **set_filter_max**\ (\ value\: ``float``\ )
+- ``float`` **get_filter_max**\ (\ )
 
-What operation will happen for each context member while scoring.
+.. container:: contribute
+
+	There is currently no description for this property. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_QueryTest2D_property_filter_min:
+
+.. rst-class:: classref-property
+
+``float`` **filter_min** = ``0.0`` :ref:`🔗<class_QueryTest2D_property_filter_min>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_filter_min**\ (\ value\: ``float``\ )
+- ``float`` **get_filter_min**\ (\ )
+
+.. container:: contribute
+
+	There is currently no description for this property. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_QueryTest2D_property_filter_multiple_context_filter_operator:
+
+.. rst-class:: classref-property
+
+:ref:`MultipleContextFilterOp<enum_GEQOEnums_MultipleContextFilterOp>` **filter_multiple_context_filter_operator** = ``0`` :ref:`🔗<class_QueryTest2D_property_filter_multiple_context_filter_operator>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_multiple_context_filter_operator**\ (\ value\: :ref:`MultipleContextFilterOp<enum_GEQOEnums_MultipleContextFilterOp>`\ )
+- :ref:`MultipleContextFilterOp<enum_GEQOEnums_MultipleContextFilterOp>` **get_multiple_context_filter_operator**\ (\ )
+
+.. container:: contribute
+
+	There is currently no description for this property. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_QueryTest2D_property_filter_type:
+
+.. rst-class:: classref-property
+
+:ref:`FilterType<enum_GEQOEnums_FilterType>` **filter_type** = ``0`` :ref:`🔗<class_QueryTest2D_property_filter_type>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_filter_type**\ (\ value\: :ref:`FilterType<enum_GEQOEnums_FilterType>`\ )
+- :ref:`FilterType<enum_GEQOEnums_FilterType>` **get_filter_type**\ (\ )
+
+.. container:: contribute
+
+	There is currently no description for this property. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_QueryTest2D_property_score_bool_match:
+
+.. rst-class:: classref-property
+
+``bool`` **score_bool_match** = ``true`` :ref:`🔗<class_QueryTest2D_property_score_bool_match>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_bool_match**\ (\ value\: ``bool``\ )
+- ``bool`` **get_bool_match**\ (\ )
+
+.. container:: contribute
+
+	There is currently no description for this property. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_QueryTest2D_property_score_clamp_max:
+
+.. rst-class:: classref-property
+
+``float`` **score_clamp_max** = ``0.0`` :ref:`🔗<class_QueryTest2D_property_score_clamp_max>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_score_clamp_max**\ (\ value\: ``float``\ )
+- ``float`` **get_score_clamp_max**\ (\ )
+
+.. container:: contribute
+
+	There is currently no description for this property. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_QueryTest2D_property_score_clamp_max_type:
+
+.. rst-class:: classref-property
+
+:ref:`ScoreClampType<enum_GEQOEnums_ScoreClampType>` **score_clamp_max_type** = ``0`` :ref:`🔗<class_QueryTest2D_property_score_clamp_max_type>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_clamp_max_type**\ (\ value\: :ref:`ScoreClampType<enum_GEQOEnums_ScoreClampType>`\ )
+- :ref:`ScoreClampType<enum_GEQOEnums_ScoreClampType>` **get_clamp_max_type**\ (\ )
+
+.. container:: contribute
+
+	There is currently no description for this property. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_QueryTest2D_property_score_clamp_min:
+
+.. rst-class:: classref-property
+
+``float`` **score_clamp_min** = ``0.0`` :ref:`🔗<class_QueryTest2D_property_score_clamp_min>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_score_clamp_min**\ (\ value\: ``float``\ )
+- ``float`` **get_score_clamp_min**\ (\ )
+
+.. container:: contribute
+
+	There is currently no description for this property. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_QueryTest2D_property_score_clamp_min_type:
+
+.. rst-class:: classref-property
+
+:ref:`ScoreClampType<enum_GEQOEnums_ScoreClampType>` **score_clamp_min_type** = ``0`` :ref:`🔗<class_QueryTest2D_property_score_clamp_min_type>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_clamp_min_type**\ (\ value\: :ref:`ScoreClampType<enum_GEQOEnums_ScoreClampType>`\ )
+- :ref:`ScoreClampType<enum_GEQOEnums_ScoreClampType>` **get_clamp_min_type**\ (\ )
+
+.. container:: contribute
+
+	There is currently no description for this property. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_QueryTest2D_property_score_curve:
+
+.. rst-class:: classref-property
+
+``Curve`` **score_curve** :ref:`🔗<class_QueryTest2D_property_score_curve>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_scoring_curve**\ (\ value\: ``Curve``\ )
+- ``Curve`` **get_scoring_curve**\ (\ )
+
+.. container:: contribute
+
+	There is currently no description for this property. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_QueryTest2D_property_score_factor:
+
+.. rst-class:: classref-property
+
+``float`` **score_factor** = ``1.0`` :ref:`🔗<class_QueryTest2D_property_score_factor>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_scoring_factor**\ (\ value\: ``float``\ )
+- ``float`` **get_scoring_factor**\ (\ )
+
+.. container:: contribute
+
+	There is currently no description for this property. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_QueryTest2D_property_score_multiple_context_score_operator:
+
+.. rst-class:: classref-property
+
+:ref:`MultipleContextScoreOp<enum_GEQOEnums_MultipleContextScoreOp>` **score_multiple_context_score_operator** = ``0`` :ref:`🔗<class_QueryTest2D_property_score_multiple_context_score_operator>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_multiple_context_score_operator**\ (\ value\: :ref:`MultipleContextScoreOp<enum_GEQOEnums_MultipleContextScoreOp>`\ )
+- :ref:`MultipleContextScoreOp<enum_GEQOEnums_MultipleContextScoreOp>` **get_multiple_context_score_operator**\ (\ )
+
+.. container:: contribute
+
+	There is currently no description for this property. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
 
 .. rst-class:: classref-item-separator
 
@@ -216,14 +396,33 @@ What operation will happen for each context member while scoring.
 
 .. rst-class:: classref-property
 
-:ref:`TestPurpose<enum_QueryTest2D_TestPurpose>` **test_purpose** = ``0`` :ref:`🔗<class_QueryTest2D_property_test_purpose>`
+:ref:`TestPurpose<enum_GEQOEnums_TestPurpose>` **test_purpose** = ``0`` :ref:`🔗<class_QueryTest2D_property_test_purpose>`
 
 .. rst-class:: classref-property-setget
 
-- |void| **set_test_purpose**\ (\ value\: :ref:`TestPurpose<enum_QueryTest2D_TestPurpose>`\ )
-- :ref:`TestPurpose<enum_QueryTest2D_TestPurpose>` **get_test_purpose**\ (\ )
+- |void| **set_test_purpose**\ (\ value\: :ref:`TestPurpose<enum_GEQOEnums_TestPurpose>`\ )
+- :ref:`TestPurpose<enum_GEQOEnums_TestPurpose>` **get_test_purpose**\ (\ )
 
 What this test is for.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_QueryTest2D_property_test_type:
+
+.. rst-class:: classref-property
+
+:ref:`TestType<enum_GEQOEnums_TestType>` **test_type** = ``0`` :ref:`🔗<class_QueryTest2D_property_test_type>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_test_type**\ (\ value\: :ref:`TestType<enum_GEQOEnums_TestType>`\ )
+- :ref:`TestType<enum_GEQOEnums_TestType>` **get_test_type**\ (\ )
+
+.. container:: contribute
+
+	There is currently no description for this property. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
 
 .. rst-class:: classref-section-separator
 
@@ -238,9 +437,21 @@ Method Descriptions
 
 .. rst-class:: classref-method
 
-|void| **_perform_test**\ (\ projection\: :ref:`QueryItem2D<class_QueryItem2D>`\ ) |virtual| |required| :ref:`🔗<class_QueryTest2D_private_method__perform_test>`
+|void| **_perform_test**\ (\ query_instance\: :ref:`QueryInstance2D<class_QueryInstance2D>`\ ) |virtual| |required| :ref:`🔗<class_QueryTest2D_private_method__perform_test>`
 
 Performs the test on this ``projection``. It adds score or filters it out.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_QueryTest2D_method_end_test:
+
+.. rst-class:: classref-method
+
+|void| **end_test**\ (\ ) :ref:`🔗<class_QueryTest2D_method_end_test>`
+
+Ends the test. Sends signal to environment query to continue.
 
 .. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

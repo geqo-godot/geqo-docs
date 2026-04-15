@@ -21,6 +21,42 @@ Description
 
 A query context that returns all available :ref:`QueryItem3D<class_QueryItem3D>`\ s.
 
+.. rst-class:: classref-reftable-group
+
+Properties
+----------
+
+.. table::
+   :widths: auto
+
+   +----------+------------------------------------------------------------------------------------------+----------+
+   | ``bool`` | :ref:`use_current_query_item<class_ContextQueryItems3D_property_use_current_query_item>` | ``true`` |
+   +----------+------------------------------------------------------------------------------------------+----------+
+
+.. rst-class:: classref-section-separator
+
+----
+
+.. rst-class:: classref-descriptions-group
+
+Property Descriptions
+---------------------
+
+.. _class_ContextQueryItems3D_property_use_current_query_item:
+
+.. rst-class:: classref-property
+
+``bool`` **use_current_query_item** = ``true`` :ref:`🔗<class_ContextQueryItems3D_property_use_current_query_item>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_use_current_query_item**\ (\ value\: ``bool``\ )
+- ``bool`` **get_use_current_query_item**\ (\ )
+
+.. container:: contribute
+
+	There is currently no description for this property. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
+
 .. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`

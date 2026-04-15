@@ -34,7 +34,7 @@ Properties
    +---------------------------------------------+-------------------------------------------------------------------------------------------------------------+-----------+
    | ``float``                                   | :ref:`grid_half_size<class_GeneratorGridShape3D_property_grid_half_size>`                                   | ``20.0``  |
    +---------------------------------------------+-------------------------------------------------------------------------------------------------------------+-----------+
-   | ``float``                                   | :ref:`post_projection_vertical_offset<class_GeneratorGridShape3D_property_post_projection_vertical_offset>` | ``0.0``   |
+   | ``float``                                   | :ref:`post_projection_vertical_offset<class_GeneratorGridShape3D_property_post_projection_vertical_offset>` | ``0.5``   |
    +---------------------------------------------+-------------------------------------------------------------------------------------------------------------+-----------+
    | ``float``                                   | :ref:`project_down<class_GeneratorGridShape3D_property_project_down>`                                       | ``100.0`` |
    +---------------------------------------------+-------------------------------------------------------------------------------------------------------------+-----------+
@@ -98,7 +98,7 @@ The half the size of the grid, similar to radius.
 
 .. rst-class:: classref-property
 
-``float`` **post_projection_vertical_offset** = ``0.0`` :ref:`🔗<class_GeneratorGridShape3D_property_post_projection_vertical_offset>`
+``float`` **post_projection_vertical_offset** = ``0.5`` :ref:`🔗<class_GeneratorGridShape3D_property_post_projection_vertical_offset>`
 
 .. rst-class:: classref-property-setget
 

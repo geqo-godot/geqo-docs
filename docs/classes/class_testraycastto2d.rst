@@ -29,21 +29,25 @@ Properties
 .. table::
    :widths: auto
 
-   +---------------------------------------------+----------------------------------------------------------------------------+--------------------------------------------------------------------------+
-   | ``bool``                                    | :ref:`cast_from_context<class_TestRaycastTo2D_property_cast_from_context>` | ``false``                                                                |
-   +---------------------------------------------+----------------------------------------------------------------------------+--------------------------------------------------------------------------+
-   | ``int``                                     | :ref:`collision_mask<class_TestRaycastTo2D_property_collision_mask>`       | ``1``                                                                    |
-   +---------------------------------------------+----------------------------------------------------------------------------+--------------------------------------------------------------------------+
-   | :ref:`QueryContext2D<class_QueryContext2D>` | :ref:`context<class_TestRaycastTo2D_property_context>`                     |                                                                          |
-   +---------------------------------------------+----------------------------------------------------------------------------+--------------------------------------------------------------------------+
-   | ``float``                                   | cost                                                                       | ``1.42`` (overrides :ref:`QueryTest2D<class_QueryTest2D_property_cost>`) |
-   +---------------------------------------------+----------------------------------------------------------------------------+--------------------------------------------------------------------------+
-   | :ref:`Array<class_Array>`\[``NodePath``\]   | :ref:`exclusions<class_TestRaycastTo2D_property_exclusions>`               | ``[]``                                                                   |
-   +---------------------------------------------+----------------------------------------------------------------------------+--------------------------------------------------------------------------+
-   | ``bool``                                    | :ref:`hitting_is_true<class_TestRaycastTo2D_property_hitting_is_true>`     | ``true``                                                                 |
-   +---------------------------------------------+----------------------------------------------------------------------------+--------------------------------------------------------------------------+
-   | TestRaycastTo2D.RaycastMode                 | :ref:`raycast_mode<class_TestRaycastTo2D_property_raycast_mode>`           | ``0``                                                                    |
-   +---------------------------------------------+----------------------------------------------------------------------------+--------------------------------------------------------------------------+
+   +---------------------------------------------+----------------------------------------------------------------------------+----------------------------------------------------------------------------+
+   | ``bool``                                    | :ref:`cast_from_context<class_TestRaycastTo2D_property_cast_from_context>` | ``false``                                                                  |
+   +---------------------------------------------+----------------------------------------------------------------------------+----------------------------------------------------------------------------+
+   | ``int``                                     | :ref:`collision_mask<class_TestRaycastTo2D_property_collision_mask>`       | ``1``                                                                      |
+   +---------------------------------------------+----------------------------------------------------------------------------+----------------------------------------------------------------------------+
+   | :ref:`QueryContext2D<class_QueryContext2D>` | :ref:`context<class_TestRaycastTo2D_property_context>`                     |                                                                            |
+   +---------------------------------------------+----------------------------------------------------------------------------+----------------------------------------------------------------------------+
+   | ``float``                                   | cost                                                                       | ``1.42`` (overrides :ref:`QueryTest2D<class_QueryTest2D_property_cost>`)   |
+   +---------------------------------------------+----------------------------------------------------------------------------+----------------------------------------------------------------------------+
+   | :ref:`Array<class_Array>`\[``NodePath``\]   | :ref:`exclusions<class_TestRaycastTo2D_property_exclusions>`               | ``[]``                                                                     |
+   +---------------------------------------------+----------------------------------------------------------------------------+----------------------------------------------------------------------------+
+   | TestRaycastTo2D.RaycastMode                 | :ref:`raycast_mode<class_TestRaycastTo2D_property_raycast_mode>`           | ``0``                                                                      |
+   +---------------------------------------------+----------------------------------------------------------------------------+----------------------------------------------------------------------------+
+   | ``Shape2D``                                 | :ref:`shape<class_TestRaycastTo2D_property_shape>`                         |                                                                            |
+   +---------------------------------------------+----------------------------------------------------------------------------+----------------------------------------------------------------------------+
+   | :ref:`TestType<enum_GEQOEnums_TestType>`    | test_type                                                                  | ``1`` (overrides :ref:`QueryTest2D<class_QueryTest2D_property_test_type>`) |
+   +---------------------------------------------+----------------------------------------------------------------------------+----------------------------------------------------------------------------+
+   | ``bool``                                    | :ref:`use_shape_cast<class_TestRaycastTo2D_property_use_shape_cast>`       | ``false``                                                                  |
+   +---------------------------------------------+----------------------------------------------------------------------------+----------------------------------------------------------------------------+
 
 .. rst-class:: classref-section-separator
 
@@ -122,23 +126,6 @@ What collision objects will be excluded from the test. Usually the querier shoul
 
 ----
 
-.. _class_TestRaycastTo2D_property_hitting_is_true:
-
-.. rst-class:: classref-property
-
-``bool`` **hitting_is_true** = ``true`` :ref:`🔗<class_TestRaycastTo2D_property_hitting_is_true>`
-
-.. rst-class:: classref-property-setget
-
-- |void| **set_hitting_is_true**\ (\ value\: ``bool``\ )
-- ``bool`` **get_hitting_is_true**\ (\ )
-
-If ``false``, hitting the target will result in failure.
-
-.. rst-class:: classref-item-separator
-
-----
-
 .. _class_TestRaycastTo2D_property_raycast_mode:
 
 .. rst-class:: classref-property
@@ -151,6 +138,44 @@ TestRaycastTo2D.RaycastMode **raycast_mode** = ``0`` :ref:`🔗<class_TestRaycas
 - TestRaycastTo2D.RaycastMode **get_raycast_mode**\ (\ )
 
 What type of collision object this test will detect.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_TestRaycastTo2D_property_shape:
+
+.. rst-class:: classref-property
+
+``Shape2D`` **shape** :ref:`🔗<class_TestRaycastTo2D_property_shape>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_shape**\ (\ value\: ``Shape2D``\ )
+- ``Shape2D`` **get_shape**\ (\ )
+
+.. container:: contribute
+
+	There is currently no description for this property. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_TestRaycastTo2D_property_use_shape_cast:
+
+.. rst-class:: classref-property
+
+``bool`` **use_shape_cast** = ``false`` :ref:`🔗<class_TestRaycastTo2D_property_use_shape_cast>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_use_shape_cast**\ (\ value\: ``bool``\ )
+- ``bool`` **get_use_shape_cast**\ (\ )
+
+.. container:: contribute
+
+	There is currently no description for this property. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
 
 .. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -47,11 +47,19 @@ Methods
 .. table::
    :widths: auto
 
-   +---------------------------------------+--------------------------------------------------------------------------------------------------------------+
-   | |void|                                | :ref:`add_score<class_QueryItem2D_method_add_score>`\ (\ amount\: ``float``\ )                               |
-   +---------------------------------------+--------------------------------------------------------------------------------------------------------------+
-   | :ref:`QueryItem2D<class_QueryItem2D>` | :ref:`create<class_QueryItem2D_method_create>`\ (\ position\: ``Vector2``, collider\: ``Node2D``\ ) |static| |
-   +---------------------------------------+--------------------------------------------------------------------------------------------------------------+
+   +---------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                                | :ref:`add_score_boolean<class_QueryItem2D_method_add_score_boolean>`\ (\ test_purpose\: :ref:`TestPurpose<enum_GEQOEnums_TestPurpose>`, value\: :ref:`FilterType<enum_GEQOEnums_FilterType>`, expected_boolean\: ``float``, _unnamed_arg3\: ``float``, _unnamed_arg4\: ``float``\ ) |
+   +---------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                                | :ref:`add_score_direct<class_QueryItem2D_method_add_score_direct>`\ (\ test_purpose\: :ref:`TestPurpose<enum_GEQOEnums_TestPurpose>`, normalized_value\: ``float``, scoring_factor\: ``float``\ )                                                                                   |
+   +---------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                                | :ref:`add_score_numeric<class_QueryItem2D_method_add_score_numeric>`\ (\ test_purpose\: :ref:`TestPurpose<enum_GEQOEnums_TestPurpose>`, filter_type\: :ref:`FilterType<enum_GEQOEnums_FilterType>`, amount\: ``float``, min_threshold\: ``float``, max_threshold\: ``float``\ )     |
+   +---------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | ``bool``                              | :ref:`apply_filter_boolean<class_QueryItem2D_method_apply_filter_boolean>`\ (\ value\: ``bool``, expected\: ``bool``\ )                                                                                                                                                             |
+   +---------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | ``bool``                              | :ref:`apply_filter_numeric<class_QueryItem2D_method_apply_filter_numeric>`\ (\ filter_type\: :ref:`FilterType<enum_GEQOEnums_FilterType>`, amount\: ``float``, min_threshold\: ``float``, max_threshold\: ``float``\ )                                                              |
+   +---------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`QueryItem2D<class_QueryItem2D>` | :ref:`create<class_QueryItem2D_method_create>`\ (\ position\: ``Vector2``, collider\: ``Node2D``\ ) |static|                                                                                                                                                                        |
+   +---------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. rst-class:: classref-section-separator
 
@@ -137,11 +145,67 @@ Current score of this item. These are normalized at the testing phase.
 Method Descriptions
 -------------------
 
-.. _class_QueryItem2D_method_add_score:
+.. _class_QueryItem2D_method_add_score_boolean:
 
 .. rst-class:: classref-method
 
-|void| **add_score**\ (\ amount\: ``float``\ ) :ref:`🔗<class_QueryItem2D_method_add_score>`
+|void| **add_score_boolean**\ (\ test_purpose\: :ref:`TestPurpose<enum_GEQOEnums_TestPurpose>`, value\: :ref:`FilterType<enum_GEQOEnums_FilterType>`, expected_boolean\: ``float``, _unnamed_arg3\: ``float``, _unnamed_arg4\: ``float``\ ) :ref:`🔗<class_QueryItem2D_method_add_score_boolean>`
+
+.. container:: contribute
+
+	There is currently no description for this method. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_QueryItem2D_method_add_score_direct:
+
+.. rst-class:: classref-method
+
+|void| **add_score_direct**\ (\ test_purpose\: :ref:`TestPurpose<enum_GEQOEnums_TestPurpose>`, normalized_value\: ``float``, scoring_factor\: ``float``\ ) :ref:`🔗<class_QueryItem2D_method_add_score_direct>`
+
+.. container:: contribute
+
+	There is currently no description for this method. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_QueryItem2D_method_add_score_numeric:
+
+.. rst-class:: classref-method
+
+|void| **add_score_numeric**\ (\ test_purpose\: :ref:`TestPurpose<enum_GEQOEnums_TestPurpose>`, filter_type\: :ref:`FilterType<enum_GEQOEnums_FilterType>`, amount\: ``float``, min_threshold\: ``float``, max_threshold\: ``float``\ ) :ref:`🔗<class_QueryItem2D_method_add_score_numeric>`
+
+.. container:: contribute
+
+	There is currently no description for this method. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_QueryItem2D_method_apply_filter_boolean:
+
+.. rst-class:: classref-method
+
+``bool`` **apply_filter_boolean**\ (\ value\: ``bool``, expected\: ``bool``\ ) :ref:`🔗<class_QueryItem2D_method_apply_filter_boolean>`
+
+.. container:: contribute
+
+	There is currently no description for this method. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_QueryItem2D_method_apply_filter_numeric:
+
+.. rst-class:: classref-method
+
+``bool`` **apply_filter_numeric**\ (\ filter_type\: :ref:`FilterType<enum_GEQOEnums_FilterType>`, amount\: ``float``, min_threshold\: ``float``, max_threshold\: ``float``\ ) :ref:`🔗<class_QueryItem2D_method_apply_filter_numeric>`
 
 Adds to the current score of this item.
 

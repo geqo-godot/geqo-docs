@@ -35,6 +35,22 @@ Properties
    | :ref:`RaycastMode<enum_QueryGenerator3D_RaycastMode>` | :ref:`raycast_mode<class_QueryGenerator3D_property_raycast_mode>` | ``0`` |
    +-------------------------------------------------------+-------------------------------------------------------------------+-------+
 
+.. rst-class:: classref-reftable-group
+
+Methods
+-------
+
+.. table::
+   :widths: auto
+
+   +---------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                                      | :ref:`_perform_generation<class_QueryGenerator3D_private_method__perform_generation>`\ (\ query_instance\: :ref:`QueryInstance3D<class_QueryInstance3D>`\ ) |virtual| |required|                         |
+   +---------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | ``Dictionary``                              | :ref:`cast_ray_projection<class_QueryGenerator3D_method_cast_ray_projection>`\ (\ start_pos\: ``Vector3``, end_pos\: ``Vector3``, exclusions\: ``Array``, col_mask\: ``int``\ )                          |
+   +---------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Array<class_Array>`\[``Dictionary``\] | :ref:`cast_shape_projection<class_QueryGenerator3D_method_cast_shape_projection>`\ (\ start_pos\: ``Vector3``, end_pos\: ``Vector3``, exclusions\: ``Array``, shape\: ``Shape3D``, col_mask\: ``int``\ ) |
+   +---------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
 .. rst-class:: classref-section-separator
 
 ----
@@ -112,6 +128,53 @@ Property Descriptions
 - :ref:`RaycastMode<enum_QueryGenerator3D_RaycastMode>` **get_raycast_mode**\ (\ )
 
 Determines what type of collisions the raycast will detect, usually used by projections.
+
+.. rst-class:: classref-section-separator
+
+----
+
+.. rst-class:: classref-descriptions-group
+
+Method Descriptions
+-------------------
+
+.. _class_QueryGenerator3D_private_method__perform_generation:
+
+.. rst-class:: classref-method
+
+|void| **_perform_generation**\ (\ query_instance\: :ref:`QueryInstance3D<class_QueryInstance3D>`\ ) |virtual| |required| :ref:`🔗<class_QueryGenerator3D_private_method__perform_generation>`
+
+.. container:: contribute
+
+	There is currently no description for this method. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_QueryGenerator3D_method_cast_ray_projection:
+
+.. rst-class:: classref-method
+
+``Dictionary`` **cast_ray_projection**\ (\ start_pos\: ``Vector3``, end_pos\: ``Vector3``, exclusions\: ``Array``, col_mask\: ``int``\ ) :ref:`🔗<class_QueryGenerator3D_method_cast_ray_projection>`
+
+.. container:: contribute
+
+	There is currently no description for this method. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_QueryGenerator3D_method_cast_shape_projection:
+
+.. rst-class:: classref-method
+
+:ref:`Array<class_Array>`\[``Dictionary``\] **cast_shape_projection**\ (\ start_pos\: ``Vector3``, end_pos\: ``Vector3``, exclusions\: ``Array``, shape\: ``Shape3D``, col_mask\: ``int``\ ) :ref:`🔗<class_QueryGenerator3D_method_cast_shape_projection>`
+
+.. container:: contribute
+
+	There is currently no description for this method. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
 
 .. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

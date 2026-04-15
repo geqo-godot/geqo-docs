@@ -39,10 +39,13 @@ Variant types
     class_geqodebugdraw2d
     class_geqodebugspheres2d
     class_geqodebugspheres3d
+    class_geqoenums
     class_querycontext2d
     class_querycontext3d
     class_querygenerator2d
     class_querygenerator3d
+    class_queryinstance2d
+    class_queryinstance3d
     class_queryitem2d
     class_queryitem3d
     class_queryresult2d
@@ -53,6 +56,7 @@ Variant types
     class_testdistanceto3d
     class_testdotproduct2d
     class_testdotproduct3d
+    class_testintersectsarea2d
     class_testintersectsarea3d
     class_testpathfindto3d
     class_testraycastto2d
