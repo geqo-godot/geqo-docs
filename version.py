@@ -1,7 +1,7 @@
 short_name = "geqo"
 name = "Godot Environment Query Orchestrator"
 major = 0
-minor = 5
+minor = 6
 patch = 1
 status = "dev"
 module_config = ""
