@@ -1,5 +1,3 @@
-:allow_comments: False
-
 GEQO Docs
 ============================
 
