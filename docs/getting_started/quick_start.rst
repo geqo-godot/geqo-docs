@@ -31,11 +31,11 @@ How to request queries
 ----------------------
 Queries are requested with ``request_query()``, and extracted via signal or cached result.
 
- .. code-block:: gdscript
+.. code-block:: gdscript
     # First, the signal is connected
     func _ready():
         $EnvironmentQuery3D.query_finished.connect(_on_query_finished)
-        
+
     # Then, whenever a position is needed, you need to request it
     $EnvironmentQuery3D.request_query()
     
