@@ -32,7 +32,7 @@ How to request queries
 Queries are requested with ``request_query()``, and extracted via signal or cached result.
 
 .. tabs::
- .. code-tab:: gdscript GDScript
+ .. code-tab:: gdscript
     # First, the signal is connected
     func _ready():
         $EnvironmentQuery3D.query_finished.connect(_on_query_finished)
@@ -52,7 +52,7 @@ Queries are requested with ``request_query()``, and extracted via signal or cach
 
 You can also use ``await`` to get the results.
 .. tabs::
- .. code-tab:: gdscript GDScript
+ .. code-tab:: gdscript
     $EnvironmentQuery3D.request_query()
     await $EnvironmentQuery3D.query_finished
     var query_result: QueryResult3D = $EnvironmentQuery3D.get_result()
