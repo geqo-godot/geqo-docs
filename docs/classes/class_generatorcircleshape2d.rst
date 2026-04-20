@@ -40,6 +40,8 @@ Properties
    +---------------------------------------------+---------------------------------------------------------------------------------------+-----------+
    | ``float``                                   | :ref:`space_between<class_GeneratorCircleShape2D_property_space_between>`             | ``20.0``  |
    +---------------------------------------------+---------------------------------------------------------------------------------------+-----------+
+   | ``bool``                                    | :ref:`use_arc_direction<class_GeneratorCircleShape2D_property_use_arc_direction>`     | ``false`` |
+   +---------------------------------------------+---------------------------------------------------------------------------------------+-----------+
    | ``bool``                                    | :ref:`use_casting<class_GeneratorCircleShape2D_property_use_casting>`                 | ``true``  |
    +---------------------------------------------+---------------------------------------------------------------------------------------+-----------+
 
@@ -132,6 +134,25 @@ Radius of the circle that expands from :ref:`circle_center<class_GeneratorCircle
 - ``float`` **get_space_between**\ (\ )
 
 The space between each point around the circle.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_GeneratorCircleShape2D_property_use_arc_direction:
+
+.. rst-class:: classref-property
+
+``bool`` **use_arc_direction** = ``false`` :ref:`🔗<class_GeneratorCircleShape2D_property_use_arc_direction>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_use_arc_direction**\ (\ value\: ``bool``\ )
+- ``bool`` **get_use_arc_direction**\ (\ )
+
+.. container:: contribute
+
+	There is currently no description for this property. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
 
 .. rst-class:: classref-item-separator
 

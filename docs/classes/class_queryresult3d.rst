@@ -44,6 +44,8 @@ Methods
    +--------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------+
    | ``Vector3``                                                        | :ref:`get_top_random_position<class_QueryResult3D_method_get_top_random_position>`\ (\ percent\: ``float`` = 0.1\ ) |const| |
    +--------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------+
+   | ``bool``                                                           | :ref:`has_result<class_QueryResult3D_method_has_result>`\ (\ )                                                              |
+   +--------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------+
 
 .. rst-class:: classref-section-separator
 
@@ -133,6 +135,20 @@ Returns a random node from the top ``percent`` from a range of 0-1.
 ``Vector3`` **get_top_random_position**\ (\ percent\: ``float`` = 0.1\ ) |const| :ref:`🔗<class_QueryResult3D_method_get_top_random_position>`
 
 Returns a random position from the top ``percent`` from a range of 0-1.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_QueryResult3D_method_has_result:
+
+.. rst-class:: classref-method
+
+``bool`` **has_result**\ (\ ) :ref:`🔗<class_QueryResult3D_method_has_result>`
+
+.. container:: contribute
+
+	There is currently no description for this method. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
 
 .. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

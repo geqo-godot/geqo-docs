@@ -52,6 +52,8 @@ Properties
    +---------------------------------------------+---------------------------------------------------------------------------------------------------------------+-----------+
    | ``float``                                   | :ref:`space_between<class_GeneratorCircleShape3D_property_space_between>`                                     | ``1.0``   |
    +---------------------------------------------+---------------------------------------------------------------------------------------------------------------+-----------+
+   | ``bool``                                    | :ref:`use_arc_direction<class_GeneratorCircleShape3D_property_use_arc_direction>`                             | ``false`` |
+   +---------------------------------------------+---------------------------------------------------------------------------------------------------------------+-----------+
    | ``bool``                                    | :ref:`use_cast_shape<class_GeneratorCircleShape3D_property_use_cast_shape>`                                   | ``false`` |
    +---------------------------------------------+---------------------------------------------------------------------------------------------------------------+-----------+
    | ``bool``                                    | :ref:`use_casting<class_GeneratorCircleShape3D_property_use_casting>`                                         | ``true``  |
@@ -252,6 +254,25 @@ Shape of the projection.
 - ``float`` **get_space_between**\ (\ )
 
 The space between each point around the circle.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_GeneratorCircleShape3D_property_use_arc_direction:
+
+.. rst-class:: classref-property
+
+``bool`` **use_arc_direction** = ``false`` :ref:`🔗<class_GeneratorCircleShape3D_property_use_arc_direction>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_use_arc_direction**\ (\ value\: ``bool``\ )
+- ``bool`` **get_use_arc_direction**\ (\ )
+
+.. container:: contribute
+
+	There is currently no description for this property. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
 
 .. rst-class:: classref-item-separator
 
