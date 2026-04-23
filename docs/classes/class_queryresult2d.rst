@@ -30,7 +30,7 @@ Methods
    :widths: auto
 
    +--------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`Array<class_Array>`\[``Node``\]                              | :ref:`get_all_node<class_QueryResult2D_method_get_all_node>`\ (\ ) |const|                                                  |
+   | :ref:`Array<class_Array>`\[``Node2D``\]                            | :ref:`get_all_node<class_QueryResult2D_method_get_all_node>`\ (\ ) |const|                                                  |
    +--------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Array<class_Array>`\[``Vector2``\]                           | :ref:`get_all_position<class_QueryResult2D_method_get_all_position>`\ (\ ) |const|                                          |
    +--------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------+
@@ -60,7 +60,7 @@ Method Descriptions
 
 .. rst-class:: classref-method
 
-:ref:`Array<class_Array>`\[``Node``\] **get_all_node**\ (\ ) |const| :ref:`🔗<class_QueryResult2D_method_get_all_node>`
+:ref:`Array<class_Array>`\[``Node2D``\] **get_all_node**\ (\ ) |const| :ref:`🔗<class_QueryResult2D_method_get_all_node>`
 
 Returns all result ``Node2D``\ s within each :ref:`QueryItem2D<class_QueryItem2D>` in ascending order based on score.
 

@@ -47,13 +47,11 @@ Methods
 .. table::
    :widths: auto
 
-   +-------------------------------------------+---------------------------------------------------------------------------------+
-   | :ref:`QueryResult2D<class_QueryResult2D>` | :ref:`get_result<class_EnvironmentQuery2D_method_get_result>`\ (\ )             |
-   +-------------------------------------------+---------------------------------------------------------------------------------+
-   | |void|                                    | :ref:`on_test_finished<class_EnvironmentQuery2D_method_on_test_finished>`\ (\ ) |
-   +-------------------------------------------+---------------------------------------------------------------------------------+
-   | |void|                                    | :ref:`request_query<class_EnvironmentQuery2D_method_request_query>`\ (\ )       |
-   +-------------------------------------------+---------------------------------------------------------------------------------+
+   +-------------------------------------------+---------------------------------------------------------------------------+
+   | :ref:`QueryResult2D<class_QueryResult2D>` | :ref:`get_result<class_EnvironmentQuery2D_method_get_result>`\ (\ )       |
+   +-------------------------------------------+---------------------------------------------------------------------------+
+   | |void|                                    | :ref:`request_query<class_EnvironmentQuery2D_method_request_query>`\ (\ ) |
+   +-------------------------------------------+---------------------------------------------------------------------------+
 
 .. rst-class:: classref-section-separator
 
@@ -71,18 +69,6 @@ Signals
 **query_finished**\ (\ result\: :ref:`QueryResult2D<class_QueryResult2D>`\ ) :ref:`🔗<class_EnvironmentQuery2D_signal_query_finished>`
 
 Emitted when the query finishes processing.
-
-.. rst-class:: classref-item-separator
-
-----
-
-.. _class_EnvironmentQuery2D_signal_tests_finished:
-
-.. rst-class:: classref-signal
-
-**tests_finished**\ (\ ) :ref:`🔗<class_EnvironmentQuery2D_signal_tests_finished>`
-
-Emitted when the tests are finished, leading to finishing the query.
 
 .. rst-class:: classref-section-separator
 
@@ -158,20 +144,6 @@ Method Descriptions
 :ref:`QueryResult2D<class_QueryResult2D>` **get_result**\ (\ ) :ref:`🔗<class_EnvironmentQuery2D_method_get_result>`
 
 After requesting a query, the :ref:`QueryResult2D<class_QueryResult2D>` is cached and can be called with this function.
-
-.. rst-class:: classref-item-separator
-
-----
-
-.. _class_EnvironmentQuery2D_method_on_test_finished:
-
-.. rst-class:: classref-method
-
-|void| **on_test_finished**\ (\ ) :ref:`🔗<class_EnvironmentQuery2D_method_on_test_finished>`
-
-.. container:: contribute
-
-	There is currently no description for this method. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
 
 .. rst-class:: classref-item-separator
 
