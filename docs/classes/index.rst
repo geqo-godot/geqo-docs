@@ -32,6 +32,7 @@ Variant types
     class_generatorcircleshape3d
     class_generatorgridshape2d
     class_generatorgridshape3d
+    class_generatorinarray2d
     class_generatorinarray3d
     class_generatoringroup2d
     class_generatoringroup3d

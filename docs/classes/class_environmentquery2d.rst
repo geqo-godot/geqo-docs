@@ -50,7 +50,7 @@ Methods
    +-------------------------------------------+---------------------------------------------------------------------------+
    | :ref:`QueryResult2D<class_QueryResult2D>` | :ref:`get_result<class_EnvironmentQuery2D_method_get_result>`\ (\ )       |
    +-------------------------------------------+---------------------------------------------------------------------------+
-   | |void|                                    | :ref:`request_query<class_EnvironmentQuery2D_method_request_query>`\ (\ ) |
+   | ``bool``                                  | :ref:`request_query<class_EnvironmentQuery2D_method_request_query>`\ (\ ) |
    +-------------------------------------------+---------------------------------------------------------------------------+
 
 .. rst-class:: classref-section-separator
@@ -153,7 +153,7 @@ After requesting a query, the :ref:`QueryResult2D<class_QueryResult2D>` is cache
 
 .. rst-class:: classref-method
 
-|void| **request_query**\ (\ ) :ref:`🔗<class_EnvironmentQuery2D_method_request_query>`
+``bool`` **request_query**\ (\ ) :ref:`🔗<class_EnvironmentQuery2D_method_request_query>`
 
 Request a query, processing it in the background, emitting :ref:`query_finished<class_EnvironmentQuery2D_signal_query_finished>` when done.
 
