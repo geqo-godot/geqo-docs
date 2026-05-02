@@ -24,9 +24,9 @@ Properties
 .. table::
    :widths: auto
 
-   +-------------------------------------------------------+------------------------------------------------------------------------+
-   | :ref:`ContextTargetNode2D<class_ContextTargetNode2D>` | :ref:`querier_context<class_QueryInstance2D_property_querier_context>` |
-   +-------------------------------------------------------+------------------------------------------------------------------------+
+   +-------------------------------------------------+------------------------------------------------------------------------+
+   | :ref:`ContextQuerier2D<class_ContextQuerier2D>` | :ref:`querier_context<class_QueryInstance2D_property_querier_context>` |
+   +-------------------------------------------------+------------------------------------------------------------------------+
 
 .. rst-class:: classref-reftable-group
 
@@ -36,35 +36,39 @@ Methods
 .. table::
    :widths: auto
 
-   +---------------------------------------+--------------------------------------------------------------------------------------------------------------------+
-   | |void|                                | :ref:`add_item<class_QueryInstance2D_method_add_item>`\ (\ item\: :ref:`QueryItem2D<class_QueryItem2D>`\ )         |
-   +---------------------------------------+--------------------------------------------------------------------------------------------------------------------+
-   | :ref:`QueryItem2D<class_QueryItem2D>` | :ref:`get_current_query_item<class_QueryInstance2D_method_get_current_query_item>`\ (\ )                           |
-   +---------------------------------------+--------------------------------------------------------------------------------------------------------------------+
-   | :ref:`QueryItem2D<class_QueryItem2D>` | :ref:`get_item<class_QueryInstance2D_method_get_item>`\ (\ index\: ``int``\ ) |const|                              |
-   +---------------------------------------+--------------------------------------------------------------------------------------------------------------------+
-   | ``int``                               | :ref:`get_item_count<class_QueryInstance2D_method_get_item_count>`\ (\ ) |const|                                   |
-   +---------------------------------------+--------------------------------------------------------------------------------------------------------------------+
-   | :ref:`QueryItem2D<class_QueryItem2D>` | :ref:`get_next_item<class_QueryInstance2D_method_get_next_item>`\ (\ )                                             |
-   +---------------------------------------+--------------------------------------------------------------------------------------------------------------------+
-   | ``float``                             | :ref:`get_test_data_max<class_QueryInstance2D_method_get_test_data_max>`\ (\ test\: ``Object``\ )                  |
-   +---------------------------------------+--------------------------------------------------------------------------------------------------------------------+
-   | ``float``                             | :ref:`get_test_data_min<class_QueryInstance2D_method_get_test_data_min>`\ (\ test\: ``Object``\ )                  |
-   +---------------------------------------+--------------------------------------------------------------------------------------------------------------------+
-   | ``bool``                              | :ref:`has_items<class_QueryInstance2D_method_has_items>`\ (\ )                                                     |
-   +---------------------------------------+--------------------------------------------------------------------------------------------------------------------+
-   | ``bool``                              | :ref:`has_test_data<class_QueryInstance2D_method_has_test_data>`\ (\ test\: ``Object``\ )                          |
-   +---------------------------------------+--------------------------------------------------------------------------------------------------------------------+
-   | ``bool``                              | :ref:`has_time_left<class_QueryInstance2D_method_has_time_left>`\ (\ )                                             |
-   +---------------------------------------+--------------------------------------------------------------------------------------------------------------------+
-   | |void|                                | :ref:`refresh_timer<class_QueryInstance2D_method_refresh_timer>`\ (\ )                                             |
-   +---------------------------------------+--------------------------------------------------------------------------------------------------------------------+
-   | |void|                                | :ref:`reset_iterator<class_QueryInstance2D_method_reset_iterator>`\ (\ )                                           |
-   +---------------------------------------+--------------------------------------------------------------------------------------------------------------------+
-   | |void|                                | :ref:`set_test_data_max<class_QueryInstance2D_method_set_test_data_max>`\ (\ test\: ``Object``, max\: ``float``\ ) |
-   +---------------------------------------+--------------------------------------------------------------------------------------------------------------------+
-   | |void|                                | :ref:`set_test_data_min<class_QueryInstance2D_method_set_test_data_min>`\ (\ test\: ``Object``, min\: ``float``\ ) |
-   +---------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+   +-----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                                              | :ref:`add_item<class_QueryInstance2D_method_add_item>`\ (\ item\: :ref:`QueryItem2D<class_QueryItem2D>`\ )                                         |
+   +-----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`QueryItem2D<class_QueryItem2D>`               | :ref:`get_current_query_item<class_QueryInstance2D_method_get_current_query_item>`\ (\ )                                                           |
+   +-----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`EnvironmentQuery2D<class_EnvironmentQuery2D>` | :ref:`get_environment_query<class_QueryInstance2D_method_get_environment_query>`\ (\ ) |const|                                                     |
+   +-----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`QueryItem2D<class_QueryItem2D>`               | :ref:`get_item<class_QueryInstance2D_method_get_item>`\ (\ index\: ``int``\ ) |const|                                                              |
+   +-----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+   | ``int``                                             | :ref:`get_item_count<class_QueryInstance2D_method_get_item_count>`\ (\ ) |const|                                                                   |
+   +-----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`QueryItem2D<class_QueryItem2D>`               | :ref:`get_next_item<class_QueryInstance2D_method_get_next_item>`\ (\ )                                                                             |
+   +-----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+   | ``float``                                           | :ref:`get_test_data_max<class_QueryInstance2D_method_get_test_data_max>`\ (\ test\: ``Object``\ )                                                  |
+   +-----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+   | ``float``                                           | :ref:`get_test_data_min<class_QueryInstance2D_method_get_test_data_min>`\ (\ test\: ``Object``\ )                                                  |
+   +-----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+   | ``bool``                                            | :ref:`has_items<class_QueryInstance2D_method_has_items>`\ (\ )                                                                                     |
+   +-----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+   | ``bool``                                            | :ref:`has_test_data<class_QueryInstance2D_method_has_test_data>`\ (\ test\: ``Object``\ )                                                          |
+   +-----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+   | ``bool``                                            | :ref:`has_time_left<class_QueryInstance2D_method_has_time_left>`\ (\ )                                                                             |
+   +-----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                                              | :ref:`refresh_timer<class_QueryInstance2D_method_refresh_timer>`\ (\ )                                                                             |
+   +-----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                                              | :ref:`reset_iterator<class_QueryInstance2D_method_reset_iterator>`\ (\ )                                                                           |
+   +-----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                                              | :ref:`set_environment_query<class_QueryInstance2D_method_set_environment_query>`\ (\ node\: :ref:`EnvironmentQuery2D<class_EnvironmentQuery2D>`\ ) |
+   +-----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                                              | :ref:`set_test_data_max<class_QueryInstance2D_method_set_test_data_max>`\ (\ test\: ``Object``, max\: ``float``\ )                                 |
+   +-----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                                              | :ref:`set_test_data_min<class_QueryInstance2D_method_set_test_data_min>`\ (\ test\: ``Object``, min\: ``float``\ )                                 |
+   +-----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. rst-class:: classref-section-separator
 
@@ -79,12 +83,12 @@ Property Descriptions
 
 .. rst-class:: classref-property
 
-:ref:`ContextTargetNode2D<class_ContextTargetNode2D>` **querier_context** :ref:`🔗<class_QueryInstance2D_property_querier_context>`
+:ref:`ContextQuerier2D<class_ContextQuerier2D>` **querier_context** :ref:`🔗<class_QueryInstance2D_property_querier_context>`
 
 .. rst-class:: classref-property-setget
 
-- |void| **set_querier_context**\ (\ value\: :ref:`ContextTargetNode2D<class_ContextTargetNode2D>`\ )
-- :ref:`ContextTargetNode2D<class_ContextTargetNode2D>` **get_querier_context**\ (\ )
+- |void| **set_querier_context**\ (\ value\: :ref:`ContextQuerier2D<class_ContextQuerier2D>`\ )
+- :ref:`ContextQuerier2D<class_ContextQuerier2D>` **get_querier_context**\ (\ )
 
 .. container:: contribute
 
@@ -118,6 +122,20 @@ Method Descriptions
 .. rst-class:: classref-method
 
 :ref:`QueryItem2D<class_QueryItem2D>` **get_current_query_item**\ (\ ) :ref:`🔗<class_QueryInstance2D_method_get_current_query_item>`
+
+.. container:: contribute
+
+	There is currently no description for this method. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_QueryInstance2D_method_get_environment_query:
+
+.. rst-class:: classref-method
+
+:ref:`EnvironmentQuery2D<class_EnvironmentQuery2D>` **get_environment_query**\ (\ ) |const| :ref:`🔗<class_QueryInstance2D_method_get_environment_query>`
 
 .. container:: contribute
 
@@ -258,6 +276,20 @@ Method Descriptions
 .. rst-class:: classref-method
 
 |void| **reset_iterator**\ (\ ) :ref:`🔗<class_QueryInstance2D_method_reset_iterator>`
+
+.. container:: contribute
+
+	There is currently no description for this method. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_QueryInstance2D_method_set_environment_query:
+
+.. rst-class:: classref-method
+
+|void| **set_environment_query**\ (\ node\: :ref:`EnvironmentQuery2D<class_EnvironmentQuery2D>`\ ) :ref:`🔗<class_QueryInstance2D_method_set_environment_query>`
 
 .. container:: contribute
 

@@ -12,7 +12,7 @@ QueryContext2D
 
 **Inherits:** ``Node2D``
 
-**Inherited By:** :ref:`ContextInGroup2D<class_ContextInGroup2D>`, :ref:`ContextQueryItems2D<class_ContextQueryItems2D>`, :ref:`ContextTargetArray2D<class_ContextTargetArray2D>`, :ref:`ContextTargetNode2D<class_ContextTargetNode2D>`
+**Inherited By:** :ref:`ContextInGroup2D<class_ContextInGroup2D>`, :ref:`ContextQuerier2D<class_ContextQuerier2D>`, :ref:`ContextQueryItems2D<class_ContextQueryItems2D>`, :ref:`ContextTargetArray2D<class_ContextTargetArray2D>`, :ref:`ContextTargetNode2D<class_ContextTargetNode2D>`
 
 Acts as a reference for :ref:`QueryGenerator2D<class_QueryGenerator2D>`\ s and :ref:`QueryTest2D<class_QueryTest2D>`\ s, providing ``Node2D``\ s and/or ``Vector2``\ s in an ``Array``.
 

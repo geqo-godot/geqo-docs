@@ -20,6 +20,8 @@ Variant types
     class_variant
     class_contextingroup2d
     class_contextingroup3d
+    class_contextquerier2d
+    class_contextquerier3d
     class_contextqueryitems2d
     class_contextqueryitems3d
     class_contexttargetarray2d
@@ -30,6 +32,8 @@ Variant types
     class_environmentquery3d
     class_generatorcircleshape2d
     class_generatorcircleshape3d
+    class_generatorcomposite2d
+    class_generatorcomposite3d
     class_generatorgridshape2d
     class_generatorgridshape3d
     class_generatorinarray2d

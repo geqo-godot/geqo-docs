@@ -12,7 +12,7 @@ QueryGenerator3D
 
 **Inherits:** ``Node3D``
 
-**Inherited By:** :ref:`GeneratorCircleShape3D<class_GeneratorCircleShape3D>`, :ref:`GeneratorGridShape3D<class_GeneratorGridShape3D>`, :ref:`GeneratorInArray3D<class_GeneratorInArray3D>`, :ref:`GeneratorInGroup3D<class_GeneratorInGroup3D>`
+**Inherited By:** :ref:`GeneratorCircleShape3D<class_GeneratorCircleShape3D>`, :ref:`GeneratorComposite3D<class_GeneratorComposite3D>`, :ref:`GeneratorGridShape3D<class_GeneratorGridShape3D>`, :ref:`GeneratorInArray3D<class_GeneratorInArray3D>`, :ref:`GeneratorInGroup3D<class_GeneratorInGroup3D>`
 
 Generates potential positions or nodes which are then stored as :ref:`QueryItem3D<class_QueryItem3D>`\ s for testing.
 

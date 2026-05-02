@@ -12,7 +12,7 @@ QueryContext3D
 
 **Inherits:** ``Node3D``
 
-**Inherited By:** :ref:`ContextInGroup3D<class_ContextInGroup3D>`, :ref:`ContextQueryItems3D<class_ContextQueryItems3D>`, :ref:`ContextTargetArray3D<class_ContextTargetArray3D>`, :ref:`ContextTargetNode3D<class_ContextTargetNode3D>`
+**Inherited By:** :ref:`ContextInGroup3D<class_ContextInGroup3D>`, :ref:`ContextQuerier3D<class_ContextQuerier3D>`, :ref:`ContextQueryItems3D<class_ContextQueryItems3D>`, :ref:`ContextTargetArray3D<class_ContextTargetArray3D>`, :ref:`ContextTargetNode3D<class_ContextTargetNode3D>`
 
 Acts as a reference for :ref:`QueryGenerator3D<class_QueryGenerator3D>`\ s and :ref:`QueryTest3D<class_QueryTest3D>`\ s, providing ``Node3D``\ s and/or ``Vector3``\ s in an ``Array``.
 

@@ -12,7 +12,7 @@ QueryGenerator2D
 
 **Inherits:** ``Node2D``
 
-**Inherited By:** :ref:`GeneratorCircleShape2D<class_GeneratorCircleShape2D>`, :ref:`GeneratorGridShape2D<class_GeneratorGridShape2D>`, :ref:`GeneratorInArray2D<class_GeneratorInArray2D>`, :ref:`GeneratorInGroup2D<class_GeneratorInGroup2D>`
+**Inherited By:** :ref:`GeneratorCircleShape2D<class_GeneratorCircleShape2D>`, :ref:`GeneratorComposite2D<class_GeneratorComposite2D>`, :ref:`GeneratorGridShape2D<class_GeneratorGridShape2D>`, :ref:`GeneratorInArray2D<class_GeneratorInArray2D>`, :ref:`GeneratorInGroup2D<class_GeneratorInGroup2D>`
 
 Generates potential positions or nodes which are then stored as :ref:`QueryItem2D<class_QueryItem2D>`\ s for testing.
 

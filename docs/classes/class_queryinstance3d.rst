@@ -24,9 +24,9 @@ Properties
 .. table::
    :widths: auto
 
-   +-------------------------------------------------------+------------------------------------------------------------------------+
-   | :ref:`ContextTargetNode3D<class_ContextTargetNode3D>` | :ref:`querier_context<class_QueryInstance3D_property_querier_context>` |
-   +-------------------------------------------------------+------------------------------------------------------------------------+
+   +-------------------------------------------------+------------------------------------------------------------------------+
+   | :ref:`ContextQuerier3D<class_ContextQuerier3D>` | :ref:`querier_context<class_QueryInstance3D_property_querier_context>` |
+   +-------------------------------------------------+------------------------------------------------------------------------+
 
 .. rst-class:: classref-reftable-group
 
@@ -36,35 +36,39 @@ Methods
 .. table::
    :widths: auto
 
-   +---------------------------------------+--------------------------------------------------------------------------------------------------------------------+
-   | |void|                                | :ref:`add_item<class_QueryInstance3D_method_add_item>`\ (\ item\: :ref:`QueryItem3D<class_QueryItem3D>`\ )         |
-   +---------------------------------------+--------------------------------------------------------------------------------------------------------------------+
-   | :ref:`QueryItem3D<class_QueryItem3D>` | :ref:`get_current_query_item<class_QueryInstance3D_method_get_current_query_item>`\ (\ )                           |
-   +---------------------------------------+--------------------------------------------------------------------------------------------------------------------+
-   | :ref:`QueryItem3D<class_QueryItem3D>` | :ref:`get_item<class_QueryInstance3D_method_get_item>`\ (\ index\: ``int``\ ) |const|                              |
-   +---------------------------------------+--------------------------------------------------------------------------------------------------------------------+
-   | ``int``                               | :ref:`get_item_count<class_QueryInstance3D_method_get_item_count>`\ (\ ) |const|                                   |
-   +---------------------------------------+--------------------------------------------------------------------------------------------------------------------+
-   | :ref:`QueryItem3D<class_QueryItem3D>` | :ref:`get_next_item<class_QueryInstance3D_method_get_next_item>`\ (\ )                                             |
-   +---------------------------------------+--------------------------------------------------------------------------------------------------------------------+
-   | ``float``                             | :ref:`get_test_data_max<class_QueryInstance3D_method_get_test_data_max>`\ (\ test\: ``Object``\ )                  |
-   +---------------------------------------+--------------------------------------------------------------------------------------------------------------------+
-   | ``float``                             | :ref:`get_test_data_min<class_QueryInstance3D_method_get_test_data_min>`\ (\ test\: ``Object``\ )                  |
-   +---------------------------------------+--------------------------------------------------------------------------------------------------------------------+
-   | ``bool``                              | :ref:`has_items<class_QueryInstance3D_method_has_items>`\ (\ )                                                     |
-   +---------------------------------------+--------------------------------------------------------------------------------------------------------------------+
-   | ``bool``                              | :ref:`has_test_data<class_QueryInstance3D_method_has_test_data>`\ (\ test\: ``Object``\ )                          |
-   +---------------------------------------+--------------------------------------------------------------------------------------------------------------------+
-   | ``bool``                              | :ref:`has_time_left<class_QueryInstance3D_method_has_time_left>`\ (\ )                                             |
-   +---------------------------------------+--------------------------------------------------------------------------------------------------------------------+
-   | |void|                                | :ref:`refresh_timer<class_QueryInstance3D_method_refresh_timer>`\ (\ )                                             |
-   +---------------------------------------+--------------------------------------------------------------------------------------------------------------------+
-   | |void|                                | :ref:`reset_iterator<class_QueryInstance3D_method_reset_iterator>`\ (\ )                                           |
-   +---------------------------------------+--------------------------------------------------------------------------------------------------------------------+
-   | |void|                                | :ref:`set_test_data_max<class_QueryInstance3D_method_set_test_data_max>`\ (\ test\: ``Object``, max\: ``float``\ ) |
-   +---------------------------------------+--------------------------------------------------------------------------------------------------------------------+
-   | |void|                                | :ref:`set_test_data_min<class_QueryInstance3D_method_set_test_data_min>`\ (\ test\: ``Object``, min\: ``float``\ ) |
-   +---------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+   +-----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                                              | :ref:`add_item<class_QueryInstance3D_method_add_item>`\ (\ item\: :ref:`QueryItem3D<class_QueryItem3D>`\ )                                         |
+   +-----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`QueryItem3D<class_QueryItem3D>`               | :ref:`get_current_query_item<class_QueryInstance3D_method_get_current_query_item>`\ (\ )                                                           |
+   +-----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`EnvironmentQuery3D<class_EnvironmentQuery3D>` | :ref:`get_environment_query<class_QueryInstance3D_method_get_environment_query>`\ (\ ) |const|                                                     |
+   +-----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`QueryItem3D<class_QueryItem3D>`               | :ref:`get_item<class_QueryInstance3D_method_get_item>`\ (\ index\: ``int``\ ) |const|                                                              |
+   +-----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+   | ``int``                                             | :ref:`get_item_count<class_QueryInstance3D_method_get_item_count>`\ (\ ) |const|                                                                   |
+   +-----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`QueryItem3D<class_QueryItem3D>`               | :ref:`get_next_item<class_QueryInstance3D_method_get_next_item>`\ (\ )                                                                             |
+   +-----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+   | ``float``                                           | :ref:`get_test_data_max<class_QueryInstance3D_method_get_test_data_max>`\ (\ test\: ``Object``\ )                                                  |
+   +-----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+   | ``float``                                           | :ref:`get_test_data_min<class_QueryInstance3D_method_get_test_data_min>`\ (\ test\: ``Object``\ )                                                  |
+   +-----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+   | ``bool``                                            | :ref:`has_items<class_QueryInstance3D_method_has_items>`\ (\ )                                                                                     |
+   +-----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+   | ``bool``                                            | :ref:`has_test_data<class_QueryInstance3D_method_has_test_data>`\ (\ test\: ``Object``\ )                                                          |
+   +-----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+   | ``bool``                                            | :ref:`has_time_left<class_QueryInstance3D_method_has_time_left>`\ (\ )                                                                             |
+   +-----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                                              | :ref:`refresh_timer<class_QueryInstance3D_method_refresh_timer>`\ (\ )                                                                             |
+   +-----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                                              | :ref:`reset_iterator<class_QueryInstance3D_method_reset_iterator>`\ (\ )                                                                           |
+   +-----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                                              | :ref:`set_environment_query<class_QueryInstance3D_method_set_environment_query>`\ (\ node\: :ref:`EnvironmentQuery3D<class_EnvironmentQuery3D>`\ ) |
+   +-----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                                              | :ref:`set_test_data_max<class_QueryInstance3D_method_set_test_data_max>`\ (\ test\: ``Object``, max\: ``float``\ )                                 |
+   +-----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                                              | :ref:`set_test_data_min<class_QueryInstance3D_method_set_test_data_min>`\ (\ test\: ``Object``, min\: ``float``\ )                                 |
+   +-----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. rst-class:: classref-section-separator
 
@@ -79,12 +83,12 @@ Property Descriptions
 
 .. rst-class:: classref-property
 
-:ref:`ContextTargetNode3D<class_ContextTargetNode3D>` **querier_context** :ref:`🔗<class_QueryInstance3D_property_querier_context>`
+:ref:`ContextQuerier3D<class_ContextQuerier3D>` **querier_context** :ref:`🔗<class_QueryInstance3D_property_querier_context>`
 
 .. rst-class:: classref-property-setget
 
-- |void| **set_querier_context**\ (\ value\: :ref:`ContextTargetNode3D<class_ContextTargetNode3D>`\ )
-- :ref:`ContextTargetNode3D<class_ContextTargetNode3D>` **get_querier_context**\ (\ )
+- |void| **set_querier_context**\ (\ value\: :ref:`ContextQuerier3D<class_ContextQuerier3D>`\ )
+- :ref:`ContextQuerier3D<class_ContextQuerier3D>` **get_querier_context**\ (\ )
 
 .. container:: contribute
 
@@ -118,6 +122,20 @@ Method Descriptions
 .. rst-class:: classref-method
 
 :ref:`QueryItem3D<class_QueryItem3D>` **get_current_query_item**\ (\ ) :ref:`🔗<class_QueryInstance3D_method_get_current_query_item>`
+
+.. container:: contribute
+
+	There is currently no description for this method. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_QueryInstance3D_method_get_environment_query:
+
+.. rst-class:: classref-method
+
+:ref:`EnvironmentQuery3D<class_EnvironmentQuery3D>` **get_environment_query**\ (\ ) |const| :ref:`🔗<class_QueryInstance3D_method_get_environment_query>`
 
 .. container:: contribute
 
@@ -258,6 +276,20 @@ Method Descriptions
 .. rst-class:: classref-method
 
 |void| **reset_iterator**\ (\ ) :ref:`🔗<class_QueryInstance3D_method_reset_iterator>`
+
+.. container:: contribute
+
+	There is currently no description for this method. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_QueryInstance3D_method_set_environment_query:
+
+.. rst-class:: classref-method
+
+|void| **set_environment_query**\ (\ node\: :ref:`EnvironmentQuery3D<class_EnvironmentQuery3D>`\ ) :ref:`🔗<class_QueryInstance3D_method_set_environment_query>`
 
 .. container:: contribute
 
