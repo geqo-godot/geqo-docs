@@ -14,6 +14,13 @@ GeneratorInArray3D
 
 A query generator that generates :ref:`QueryItem3D<class_QueryItem3D>`\ s in the positions of each :ref:`QueryContext3D<class_QueryContext3D>`.
 
+.. rst-class:: classref-introduction-group
+
+Description
+-----------
+
+A query generator that generates :ref:`QueryItem3D<class_QueryItem3D>`\ s in the positions of each :ref:`QueryContext3D<class_QueryContext3D>`.
+
 .. rst-class:: classref-reftable-group
 
 Properties

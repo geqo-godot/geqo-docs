@@ -53,9 +53,7 @@ Property Descriptions
 - |void| **set_use_current_query_item**\ (\ value\: ``bool``\ )
 - ``bool`` **get_use_current_query_item**\ (\ )
 
-.. container:: contribute
-
-	There is currently no description for this property. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
+Returns only the active query item in a test.
 
 .. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

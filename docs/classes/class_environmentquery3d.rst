@@ -31,13 +31,15 @@ Properties
 .. table::
    :widths: auto
 
-   +------------+-----------------------------------------------------------------------------+-----------+
-   | ``Node3D`` | :ref:`querier<class_EnvironmentQuery3D_property_querier>`                   |           |
-   +------------+-----------------------------------------------------------------------------+-----------+
-   | ``float``  | :ref:`time_budget_ms<class_EnvironmentQuery3D_property_time_budget_ms>`     | ``1.0``   |
-   +------------+-----------------------------------------------------------------------------+-----------+
-   | ``bool``   | :ref:`use_debug_shapes<class_EnvironmentQuery3D_property_use_debug_shapes>` | ``false`` |
-   +------------+-----------------------------------------------------------------------------+-----------+
+   +------------+---------------------------------------------------------------------------------+-----------+
+   | ``float``  | :ref:`debug_lifetime_sec<class_EnvironmentQuery3D_property_debug_lifetime_sec>` | ``5.0``   |
+   +------------+---------------------------------------------------------------------------------+-----------+
+   | ``Node3D`` | :ref:`querier<class_EnvironmentQuery3D_property_querier>`                       |           |
+   +------------+---------------------------------------------------------------------------------+-----------+
+   | ``float``  | :ref:`time_budget_ms<class_EnvironmentQuery3D_property_time_budget_ms>`         | ``1.0``   |
+   +------------+---------------------------------------------------------------------------------+-----------+
+   | ``bool``   | :ref:`use_debug_shapes<class_EnvironmentQuery3D_property_use_debug_shapes>`     | ``false`` |
+   +------------+---------------------------------------------------------------------------------+-----------+
 
 .. rst-class:: classref-reftable-group
 
@@ -79,6 +81,23 @@ Emitted when the query finishes processing.
 Property Descriptions
 ---------------------
 
+.. _class_EnvironmentQuery3D_property_debug_lifetime_sec:
+
+.. rst-class:: classref-property
+
+``float`` **debug_lifetime_sec** = ``5.0`` :ref:`🔗<class_EnvironmentQuery3D_property_debug_lifetime_sec>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_debug_lifetime_sec**\ (\ value\: ``float``\ )
+- ``float`` **get_debug_lifetime_sec**\ (\ )
+
+How long the visualization will stay active for in seconds.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_EnvironmentQuery3D_property_querier:
 
 .. rst-class:: classref-property
@@ -90,9 +109,7 @@ Property Descriptions
 - |void| **set_querier**\ (\ value\: ``Node3D``\ )
 - ``Node3D`` **get_querier**\ (\ )
 
-.. container:: contribute
-
-	There is currently no description for this property. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
+The owner of this query. Defaults to the parent of this node.
 
 .. rst-class:: classref-item-separator
 

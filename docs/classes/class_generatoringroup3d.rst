@@ -30,7 +30,7 @@ Properties
    :widths: auto
 
    +---------------------------------------------+---------------------------------------------------------------------------+----------+
-   | ``float``                                   | :ref:`collision_mask<class_GeneratorInGroup3D_property_collision_mask>`   | ``0.0``  |
+   | ``float``                                   | :ref:`collision_mask<class_GeneratorInGroup3D_property_collision_mask>`   | ``1.0``  |
    +---------------------------------------------+---------------------------------------------------------------------------+----------+
    | :ref:`QueryContext3D<class_QueryContext3D>` | :ref:`generate_around<class_GeneratorInGroup3D_property_generate_around>` |          |
    +---------------------------------------------+---------------------------------------------------------------------------+----------+
@@ -52,7 +52,7 @@ Property Descriptions
 
 .. rst-class:: classref-property
 
-``float`` **collision_mask** = ``0.0`` :ref:`🔗<class_GeneratorInGroup3D_property_collision_mask>`
+``float`` **collision_mask** = ``1.0`` :ref:`🔗<class_GeneratorInGroup3D_property_collision_mask>`
 
 .. rst-class:: classref-property-setget
 

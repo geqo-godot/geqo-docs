@@ -14,6 +14,13 @@ TestPathFindTo3D
 
 A query test that checks if there is a navigation path from the :ref:`QueryItem3D<class_QueryItem3D>` to a :ref:`QueryContext3D<class_QueryContext3D>`.
 
+.. rst-class:: classref-introduction-group
+
+Description
+-----------
+
+A query test that checks if there is a navigation path from the :ref:`QueryItem3D<class_QueryItem3D>` to a :ref:`QueryContext3D<class_QueryContext3D>`.
+
 .. rst-class:: classref-reftable-group
 
 Properties

@@ -12,9 +12,14 @@ ContextQuerier2D
 
 **Inherits:** :ref:`QueryContext2D<class_QueryContext2D>` **<** ``Node2D``
 
-.. container:: contribute
+Uses the querier defined in the :ref:`EnvironmentQuery2D<class_EnvironmentQuery2D>`.
 
-	There is currently no description for this class. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
+.. rst-class:: classref-introduction-group
+
+Description
+-----------
+
+Uses the querier defined in the :ref:`EnvironmentQuery2D<class_EnvironmentQuery2D>`.
 
 .. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

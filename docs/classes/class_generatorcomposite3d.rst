@@ -12,9 +12,14 @@ GeneratorComposite3D
 
 **Inherits:** :ref:`QueryGenerator3D<class_QueryGenerator3D>` **<** ``Node3D``
 
-.. container:: contribute
+Allows multiple Generators to be used. The Generators must be children of this node.
 
-	There is currently no description for this class. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
+.. rst-class:: classref-introduction-group
+
+Description
+-----------
+
+Allows multiple Generators to be used. The Generators must be children of this node.
 
 .. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

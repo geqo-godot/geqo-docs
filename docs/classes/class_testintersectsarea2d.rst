@@ -12,9 +12,14 @@ TestIntersectsArea2D
 
 **Inherits:** :ref:`QueryTest2D<class_QueryTest2D>` **<** ``Node2D``
 
-.. container:: contribute
+A query test that checks if :ref:`QueryContext2D<class_QueryContext2D>` is intersecting an area using ``Shape2D``.
 
-	There is currently no description for this class. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
+.. rst-class:: classref-introduction-group
+
+Description
+-----------
+
+A query test that checks if :ref:`QueryContext2D<class_QueryContext2D>` is intersecting an area using ``Shape2D``.
 
 .. rst-class:: classref-reftable-group
 
@@ -58,9 +63,7 @@ Property Descriptions
 - |void| **set_collision_mask**\ (\ value\: ``int``\ )
 - ``int`` **get_collision_mask**\ (\ )
 
-.. container:: contribute
-
-	There is currently no description for this property. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
+The physics layers this test **scans**.
 
 .. rst-class:: classref-item-separator
 
@@ -77,9 +80,7 @@ Property Descriptions
 - |void| **set_context**\ (\ value\: :ref:`QueryContext2D<class_QueryContext2D>`\ )
 - :ref:`QueryContext2D<class_QueryContext2D>` **get_context**\ (\ )
 
-.. container:: contribute
-
-	There is currently no description for this property. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
+The context to be tested.
 
 .. rst-class:: classref-item-separator
 
@@ -96,9 +97,7 @@ Property Descriptions
 - |void| **set_shape**\ (\ value\: ``Shape2D``\ )
 - ``Shape2D`` **get_shape**\ (\ )
 
-.. container:: contribute
-
-	There is currently no description for this property. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
+The actual shape that will be used in the ``PhysicsShapeQueryParameters2D``.
 
 .. rst-class:: classref-item-separator
 
@@ -115,9 +114,7 @@ TestIntersectsArea2D.ShapeCastMode **shape_cast_mode** = ``0`` :ref:`🔗<class_
 - |void| **set_shape_cast_mode**\ (\ value\: TestIntersectsArea2D.ShapeCastMode\ )
 - TestIntersectsArea2D.ShapeCastMode **get_shape_cast_mode**\ (\ )
 
-.. container:: contribute
-
-	There is currently no description for this property. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
+What types of collision objects the test will scan.
 
 .. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

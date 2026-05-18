@@ -12,9 +12,14 @@ GeneratorInArray2D
 
 **Inherits:** :ref:`QueryGenerator2D<class_QueryGenerator2D>` **<** ``Node2D``
 
-.. container:: contribute
+A query generator that generates :ref:`QueryItem2D<class_QueryItem2D>`\ s in the positions of each :ref:`QueryContext2D<class_QueryContext2D>`.
 
-	There is currently no description for this class. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
+.. rst-class:: classref-introduction-group
+
+Description
+-----------
+
+A query generator that generates :ref:`QueryItem2D<class_QueryItem2D>`\ s in the positions of each :ref:`QueryContext2D<class_QueryContext2D>`.
 
 .. rst-class:: classref-reftable-group
 
@@ -48,9 +53,7 @@ Property Descriptions
 - |void| **set_context_array**\ (\ value\: :ref:`QueryContext2D<class_QueryContext2D>`\ )
 - :ref:`QueryContext2D<class_QueryContext2D>` **get_context_array**\ (\ )
 
-.. container:: contribute
-
-	There is currently no description for this property. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
+Array that will be returned. Can be ``Node2D``\ s or ``Vector2``\ s.
 
 .. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

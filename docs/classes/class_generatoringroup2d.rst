@@ -30,7 +30,7 @@ Properties
    :widths: auto
 
    +---------------------------------------------+---------------------------------------------------------------------------+-----------+
-   | ``float``                                   | :ref:`collision_mask<class_GeneratorInGroup2D_property_collision_mask>`   | ``0.0``   |
+   | ``float``                                   | :ref:`collision_mask<class_GeneratorInGroup2D_property_collision_mask>`   | ``1.0``   |
    +---------------------------------------------+---------------------------------------------------------------------------+-----------+
    | :ref:`QueryContext2D<class_QueryContext2D>` | :ref:`generate_around<class_GeneratorInGroup2D_property_generate_around>` |           |
    +---------------------------------------------+---------------------------------------------------------------------------+-----------+
@@ -52,16 +52,14 @@ Property Descriptions
 
 .. rst-class:: classref-property
 
-``float`` **collision_mask** = ``0.0`` :ref:`🔗<class_GeneratorInGroup2D_property_collision_mask>`
+``float`` **collision_mask** = ``1.0`` :ref:`🔗<class_GeneratorInGroup2D_property_collision_mask>`
 
 .. rst-class:: classref-property-setget
 
 - |void| **set_collision_mask**\ (\ value\: ``float``\ )
 - ``float`` **get_collision_mask**\ (\ )
 
-.. container:: contribute
-
-	There is currently no description for this property. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
+The physics layers this generator **scans**.
 
 .. rst-class:: classref-item-separator
 
@@ -78,9 +76,7 @@ Property Descriptions
 - |void| **set_generate_around**\ (\ value\: :ref:`QueryContext2D<class_QueryContext2D>`\ )
 - :ref:`QueryContext2D<class_QueryContext2D>` **get_generate_around**\ (\ )
 
-.. container:: contribute
-
-	There is currently no description for this property. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
+Reference :ref:`QueryContext2D<class_QueryContext2D>`, where a ``Shape2D`` will check around each of them in search of the members in :ref:`group<class_GeneratorInGroup2D_property_group>`.
 
 .. rst-class:: classref-item-separator
 
@@ -97,9 +93,7 @@ Property Descriptions
 - |void| **set_group**\ (\ value\: ``String``\ )
 - ``String`` **get_group**\ (\ )
 
-.. container:: contribute
-
-	There is currently no description for this property. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
+The target group.
 
 .. rst-class:: classref-item-separator
 
@@ -116,9 +110,7 @@ Property Descriptions
 - |void| **set_range_radius**\ (\ value\: ``float``\ )
 - ``float`` **get_range_radius**\ (\ )
 
-.. container:: contribute
-
-	There is currently no description for this property. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
+Radius of each ``Shape2D``.
 
 .. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

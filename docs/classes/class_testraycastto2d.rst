@@ -154,9 +154,7 @@ What type of collision object this test will detect.
 - |void| **set_shape**\ (\ value\: ``Shape2D``\ )
 - ``Shape2D`` **get_shape**\ (\ )
 
-.. container:: contribute
-
-	There is currently no description for this property. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
+The actual shape used by this test.
 
 .. rst-class:: classref-item-separator
 
@@ -173,9 +171,7 @@ What type of collision object this test will detect.
 - |void| **set_use_shape_cast**\ (\ value\: ``bool``\ )
 - ``bool`` **get_use_shape_cast**\ (\ )
 
-.. container:: contribute
-
-	There is currently no description for this property. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
+Use a ``Shape3D`` instead of a raycast.
 
 .. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

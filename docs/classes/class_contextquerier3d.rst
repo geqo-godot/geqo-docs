@@ -12,9 +12,14 @@ ContextQuerier3D
 
 **Inherits:** :ref:`QueryContext3D<class_QueryContext3D>` **<** ``Node3D``
 
-.. container:: contribute
+Uses the querier defined in the :ref:`EnvironmentQuery3D<class_EnvironmentQuery3D>`.
 
-	There is currently no description for this class. Please help us by `contributing one <https://github.com/geqo-godot/geqo-docs>`__!
+.. rst-class:: classref-introduction-group
+
+Description
+-----------
+
+Uses the querier defined in the :ref:`EnvironmentQuery3D<class_EnvironmentQuery3D>`.
 
 .. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
